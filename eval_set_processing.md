@@ -12,18 +12,18 @@ sbatch -p pfen1 -w compute-1-11 -o ~/cow_mouse.o /home/azstephe/liverRegression/
 ## PIG
 sbatch -p pfen1 -w compute-1-11 -o ~/pig_mouse.o /home/azstephe/liverRegression/repos/halLiftover-postprocessing/halper_map_peak_orthologs.sh -s Sus_scrofa -t Mus_musculus -o /scratch/azstephe/liver/pigToMouse/ -b /home/azstephe/liverRegression/regression_liver/data/raw/pig_liver_pos_ALL_genBankNames.narrowPeak --halPath /home/ikaplow/RegulatoryElementEvolutionProject/src/hal/bin/halLiftover
 
-# CONVERT PIG TO GENBANKNAMES
+## CONVERT PIG TO GENBANKNAMES
 python /home/ikaplow/RegulatoryElementEvolutionProject/src/RegElEvoCode/convertChromNames.py --bedFileName /home/azstephe/liverRegression/regression_liver/data/raw/pig_liver_pos_ALL.narrowPeak --chromNameDictFileName /projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/PigGenome/GenbankNameToChromNameSusScr3.txt --chromNameDictReverse --outputFileName /home/azstephe/liverRegression/regression_liver/data/raw/pig_liver_pos_ALL_genBankNames.narrowPeak
 
-# MAP MOUSE VAL TO THE 4 OTHER SPECIES
+## MAP MOUSE VAL TO THE 4 OTHER SPECIES
 bash /home/azstephe/liverRegression/repos/halLiftover-postprocessing/halper_map_peak_orthologs.sh -s Mus_musculus -t Macaca_mulatta,Rattus_norvegicus,Bos_taurus,Sus_scrofa -o /scratch/azstephe/liver/mouseTo_VAL/ -b /home/azstephe/liverRegression/regression_liver/data/raw/mouse_liver_pos_VAL.narrowPeak --halPath /home/ikaplow/RegulatoryElementEvolutionProject/src/hal/bin/halLiftover
 
 # ################################################################################################################################################
 # VAL SET CREATION
-# /home/azstephe/liverRegression/regression_liver/data/splits/logPos/
-# /home/azstephe/liverRegression/regression_liver/data/val_splits/val1/
-# /home/azstephe/liverRegression/regression_liver/data/splits/log_val2/
-# /home/azstephe/liverRegression/regression_liver/data/splits/log_val3/
+ /home/azstephe/liverRegression/regression_liver/data/splits/logPos/
+ /home/azstephe/liverRegression/regression_liver/data/val_splits/val1/
+ /home/azstephe/liverRegression/regression_liver/data/splits/log_val2/
+ /home/azstephe/liverRegression/regression_liver/data/splits/log_val3/
 # ################################################################################################################################################
 
 # VAL SET MOUSE COORDINATES, NON-MOUSE PEAKNAMES
@@ -158,11 +158,11 @@ python ~/liverRegression/repos/OCROrthologPrediction/src/filterPeakName.py --unf
  
 # ################################################################################################################################################
 # TEST SET CREATION
-# /home/azstephe/liverRegression/regression_liver/data/test_splits/log_pos_LiuAll/
-# /home/azstephe/liverRegression/regression_liver/data/test_splits/neg/
-# /home/azstephe/liverRegression/regression_liver/data/test_splits/log_LiuAll_test1/
-# /home/azstephe/liverRegression/regression_liver/data/test_splits/log_test2/
-# /home/azstephe/liverRegression/regression_liver/data/test_splits/log_test3/
+ /home/azstephe/liverRegression/regression_liver/data/test_splits/log_pos_LiuAll/
+ /home/azstephe/liverRegression/regression_liver/data/test_splits/neg/
+ /home/azstephe/liverRegression/regression_liver/data/test_splits/log_LiuAll_test1/
+ /home/azstephe/liverRegression/regression_liver/data/test_splits/log_test2/
+ /home/azstephe/liverRegression/regression_liver/data/test_splits/log_test3/
 # ################################################################################################################################################
 
 # LOG TEST SET
@@ -310,9 +310,9 @@ python ~/liverRegression/repos/OCROrthologPrediction/src/filterPeakName.py --unf
 
 # ################################################################################################################################################
 # COW + PIG CREATION
-# /home/azstephe/liverRegression/regression_liver/data/test_splits/log_test4/
-# /home/azstephe/liverRegression/regression_liver/data/test_splits/log_test5/
-# /home/azstephe/liverRegression/regression_liver/data/splits/cow_pig/ (val + train)
+ /home/azstephe/liverRegression/regression_liver/data/test_splits/log_test4/
+ /home/azstephe/liverRegression/regression_liver/data/test_splits/log_test5/
+ /home/azstephe/liverRegression/regression_liver/data/splits/cow_pig/ (val + train)
 # ################################################################################################################################################
 
 ### convert to chromName [train, val, test sets positives]
@@ -349,7 +349,7 @@ awk 'BEGIN{OFS="\t"} {print $1, $2 + $10 - 250, $2 + $10 + 250, $4, $7}' /home/a
 
 1. Basically filters /home/azstephe/liverRegression/regression_liver/data/ladder_qn/ instead of /home/azstephe/liverRegression/regression_liver/data/log/
 
-# Run:
+### Run:
 bash /home/azstephe/liverRegression/regression_liver/scripts/make_2kb.sh
 bash /home/azstephe/liverRegression/regression_liver/scripts/make_eqn.sh
 
@@ -357,26 +357,26 @@ bash /home/azstephe/liverRegression/regression_liver/scripts/make_eqn.sh
 # USED THESE SETS FOR EVAL
 # ################################################################################################################################################
 
-# /home/azstephe/liverRegression/regression_liver/data/splits/logPos/*VAL* 
+### /home/azstephe/liverRegression/regression_liver/data/splits/logPos/*VAL* 
 
-# /home/azstephe/liverRegression/regression_liver/data/val_splits/val1/ 
+### /home/azstephe/liverRegression/regression_liver/data/val_splits/val1/ 
 
-# /home/azstephe/liverRegression/regression_liver/data/splits/log_val2/ 
+### /home/azstephe/liverRegression/regression_liver/data/splits/log_val2/ 
 
-# /home/azstephe/liverRegression/regression_liver/data/splits/log_val3/ 
+### /home/azstephe/liverRegression/regression_liver/data/splits/log_val3/ 
 
-# /home/azstephe/liverRegression/regression_liver/data/test_splits/log_pos_LiuAll/ 
+### /home/azstephe/liverRegression/regression_liver/data/test_splits/log_pos_LiuAll/ 
 
-# /home/azstephe/liverRegression/regression_liver/data/test_splits/neg/ 
+### /home/azstephe/liverRegression/regression_liver/data/test_splits/neg/ 
 
-# /home/azstephe/liverRegression/regression_liver/data/test_splits/log_LiuAll_test1/ 
+### /home/azstephe/liverRegression/regression_liver/data/test_splits/log_LiuAll_test1/ 
 
-# /home/azstephe/liverRegression/regression_liver/data/test_splits/log_test2/ 
+### /home/azstephe/liverRegression/regression_liver/data/test_splits/log_test2/ 
 
-# /home/azstephe/liverRegression/regression_liver/data/test_splits/log_test3/ 
+### /home/azstephe/liverRegression/regression_liver/data/test_splits/log_test3/ 
 
-# /home/azstephe/liverRegression/regression_liver/data/test_splits/log_test4/cow_pig_liver_pos_TEST_500bp.bed 
+### /home/azstephe/liverRegression/regression_liver/data/test_splits/log_test4/cow_pig_liver_pos_TEST_500bp.bed 
 
-# /home/azstephe/liverRegression/regression_liver/data/test_splits/log_test5/cow_pig_liver_neg_TEST_500bp.bed 
+### /home/azstephe/liverRegression/regression_liver/data/test_splits/log_test5/cow_pig_liver_neg_TEST_500bp.bed 
 
-# /home/azstephe/liverRegression/regression_liver/data/splits/logPos/*TRAINONLY.narrowPeak* 
+### /home/azstephe/liverRegression/regression_liver/data/splits/logPos/*TRAINONLY.narrowPeak* 
