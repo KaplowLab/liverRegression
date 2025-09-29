@@ -1,3 +1,16 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+Quantile normalizes BED files
+
+This script takes multiple space separated BED file name paths. Assumes the files are the same length.
+
+Saves quantile normalized BED files in "quantile_norm" subdirectory
+
+It quantile normalizes with no ties for rank.
+"""
+
 import numpy as np
 from scipy.stats import rankdata
 import pandas as pd
@@ -71,12 +84,14 @@ def new_path_dir(file_paths):
         new_dir.mkdir(parents=True, exist_ok=True)
         
         updated_paths.append(str(updated_path))
-    print(updated_paths[0])
     return updated_paths
     
 if __name__ == "__main__":
+    """
+    Usage: Follow python command with input files separated by a space
+    Example: python quantile_normalize.py macaque.bed rat.bed mouse.bed
+    """
     infiles = sys.argv[1:]
-    # print('Usage:Follow python command with input files separated by a space')
 
     outfiles = new_path_dir(infiles)
     

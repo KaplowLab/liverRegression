@@ -1,3 +1,16 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+Quantile normalizes BED files
+
+This script takes multiple space separated BED file name paths. Assumes the files are the same length.
+
+Saves quantile normalized BED files in "quantile_norm" subdirectory
+
+It quantile normalizes with no ties for rank.
+"""
+
 import numpy as np
 from scipy.stats import rankdata
 import pandas as pd
@@ -6,28 +19,24 @@ from pathlib import Path
 import os
 
 def rank_column_with_ties(col):
-    """Custom function for ranking that labels same values with the same rank"""
+    """Custom function for ranking that assigns different ranks to tied values"""
     sorted_indices = np.argsort(col)
     ranks = np.zeros_like(col, dtype=int)
-    rank = 1
     
-    # Assign ranks based on sorted order and handle ties
+    # Assign ranks based on sorted order without considering ties
     for i in range(len(col)):
-        if i > 0 and col[sorted_indices[i]] != col[sorted_indices[i - 1]]:
-            rank = i + 1
-        ranks[sorted_indices[i]] = rank
+        ranks[sorted_indices[i]] = i + 1 
     return ranks
-
 
 def quantile_normalize(values):
     """Quantile normalizes 2D array"""
     sorted_values = np.sort(values, axis=1)
     ranked = np.apply_along_axis(rank_column_with_ties, 1, values)
 
-    # Calculate the mean value at each rank
+    # Calculate mean value at each rank
     quantiles = np.mean(sorted_values, axis=0)
 
-    # Vectorize the replacement function for efficiency
+    # Vectorize replacement function
     replacement_map = {i+1: quantiles[i] for i in range(len(quantiles))}
     vectorized_replace = np.vectorize(lambda x: replacement_map.get(x, x))
 
@@ -69,18 +78,20 @@ def new_path_dir(file_paths):
 
         parent_dir = path_obj.parent
         
-        new_dir = Path(*parent_dir.parts[:-1], 'quantile_norm')
+        new_dir = Path(*parent_dir.parts, 'quantile_norm')
         updated_path = new_dir / path_obj.name
         
         new_dir.mkdir(parents=True, exist_ok=True)
         
         updated_paths.append(str(updated_path))
-    
     return updated_paths
     
 if __name__ == "__main__":
+    """
+    Usage: Follow python command with input files separated by a space
+    Example: python quantile_normalize.py macaque.bed rat.bed mouse.bed
+    """
     infiles = sys.argv[1:]
-    # print('Usage:Follow python command with input files separated by a space')
 
     outfiles = new_path_dir(infiles)
     
