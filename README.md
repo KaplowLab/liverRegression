@@ -38,15 +38,25 @@ Models and logs are saved to: `~/repos/cnn_pipeline/wandb/`
 
 An example run output is provided in: `examples/run-20250225_222915-bdbi7l3n`
 
-## Model Evaluation & Activations
-`scripts/get_activations.sh` automates the extraction of model predictions for all datasets. This script automatically submits sbatch jobs to the cluster and uses a GPU. Note: will not work out the box. 
+## Model Activations
+`scripts/get_activations.sh` automates the extraction of model predictions for all datasets. This script automatically submits sbatch jobs to the cluster and uses a GPU. Gets activations for the following set: 
 
-### Supported Sets:
 Positive and Negative sets for Training, Validation, and Testing.
-Specific subsets: Val 1, 2, 3 and Test 1, 2, 3.
+Subsets: Val 1, 2, 3 and Test 1, 2, 3.
 
+Note on Usage: These scripts use project-specific naming conventions and data structures. While they serve as documented templates for the analysis methodology, they will require adaptation to work with external datasets.
 ```
-# Pass the WandB Run ID as the argument
 bash get_activations.sh run-20250225_222915-bdbi7l3n
 ```
 Output Directory: ~/data/model_outputs/${ID}_FINAL
+
+## Model Evaluations
+
+Examples for correlating model predictions with observed signal values are available in the provided Python notebooks.
+
+Note on Usage: These scripts use project-specific naming conventions and data structures. While they serve as documented templates for the analysis methodology, they will require adaptation to work with external datasets.
+
+`scripts/foldchange_eval.ipynb`
+`scripts/prediction_eval.ipynb`
+
+## Memechip Analysis
