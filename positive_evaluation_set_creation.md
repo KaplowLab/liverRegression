@@ -44,7 +44,7 @@ Filter the Test peak set against our log-signal file to get a file with the OCR 
 ```bash
 # Filter test set peaks using the log signal values file
 python ~/liverRegression/repos/OCROrthologPrediction/src/filterPeakName.py \
-  --unfilteredPeakFileName /home/azstephe/liverRegression/regression_liver/data/log/rat_liver_pos_ALL.bed \
+  --unfilteredPeakFileName /home/azstephe/liverRegression/regression_liver/data/log/rat_liver_pos_ALL_500bp.bed \
   --peakListFileName /home/azstephe/liverRegression/regression_liver/data/mapped/ratToMouse_liver_ratEnhancer_TEST.narrowPeak \
   --peakNameCol 3 \
   --outputFileName /home/azstephe/liverRegression/regression_liver/data/test_splits/log_pos/rat_liver_TEST_500bp.bed
@@ -71,7 +71,7 @@ Filter the Test 2 peak set against our log-signal file to get a file with the OC
 ```bash
 # Filter the conserved test set against the log signal values file
 python ~/liverRegression/repos/OCROrthologPrediction/src/filterPeakName.py \
-  --unfilteredPeakFileName /home/azstephe/liverRegression/regression_liver/data/log/rat_liver_pos_ALL.bed \
+  --unfilteredPeakFileName /home/azstephe/liverRegression/regression_liver/data/log/rat_liver_pos_ALL_500bp.bed \
   --peakListFileName /home/azstephe/liverRegression/regression_liver/data/mapped/ratToMouse_liver_ratEnhancer_mouseEnhancer_wawb.narrowPeak \
   --peakNameCol 3 \
   --outputFileName /home/azstephe/liverRegression/regression_liver/data/test_splits/log_test2/rat_liver_TEST_500bp.bed
@@ -97,7 +97,7 @@ Filter the Test 3 peak set against our log-signal file to get a file with the OC
 ```bash
 # Filter test 3 set peaks using the log signal values file
 python ~/liverRegression/repos/OCROrthologPrediction/src/filterPeakName.py \
-  --unfilteredPeakFileName /home/azstephe/liverRegression/regression_liver/data/log/rat_liver_pos_ALL.bed \
+  --unfilteredPeakFileName /home/azstephe/liverRegression/regression_liver/data/log/rat_liver_pos_ALL_500bp.bed \
   --peakListFileName /home/azstephe/liverRegression/regression_liver/data/mapped/ratToMouse_liver_ratEnhancer_mouseNon_TEST3.narrowPeak \
   --peakNameCol 3 \
   --outputFileName /home/azstephe/liverRegression/regression_liver/data/test_splits/log_test3/rat_liver_TEST_500bp.bed
