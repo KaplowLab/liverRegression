@@ -23,7 +23,7 @@ Primary output: `rat_liver_pos_ALL.Rattus_norvegicusToMus_musculus.HALPER.narrow
 Column 3: Mouse coordinates of the mapped rat peak.
 Column 4: Original Rat peak name.
 
-## 2. Create Test Set
+## 2. Create Positive Test Set
 We reserve rat regions that are orthologs of mouse chr1 and chr2 as our test set.
 ### Identify Postive Test Peak Set
 ```bash
