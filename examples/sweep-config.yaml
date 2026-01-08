@@ -1,0 +1,58 @@
+# sweep-config.yaml: Config for `wandb` hyperparameter sweep.
+# Usage: sbatch sweep.sb
+#
+# Note: To run the sweep in an interactive session (e.g. for debugging),
+#     wandb sweep sweep-config.yaml
+# This is not recommended for actual training (use sbatch instead).
+
+program: train.py
+
+command:
+  - ${env}
+  - ${interpreter}
+  - ${program}
+  - "-config"
+  - "config.yaml"
+  - ${args}
+
+project: liverRegression
+
+method: random
+
+metric:
+  name: val_mean_squared_error
+  goal: minimize
+
+parameters:
+  lr_init:
+    distribution: log_uniform_values
+    min: 1.e-5
+    max: 5.e-3
+
+  conv_filters:
+    values: [50, 100, 130, 175, 200, 225, 250, 275, 300, 325]
+
+  dense_filters:
+    values: [50, 100, 150, 200, 250, 300, 350, 400]
+
+  num_conv_layers:
+    values: [1, 2, 3, 4, 5, 6, 7]
+
+  num_dense_layers:
+    values: [1, 2, 3, 4, 5]
+  
+  dropout_rate_dense:
+    values: [0.01, 0.05, 0.1, 0.15, 0.2, 0.35, 0.4, 0.45, 0.5]
+
+  dropout_rate_conv:
+    values: [0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.7]
+
+  l2_reg_conv:
+    distribution: log_uniform_values
+    min: 1.e-5
+    max: 5.e-2
+
+  l2_reg_dense:
+    distribution: log_uniform_values
+    min: 1.e-4
+    max: 9.e-2

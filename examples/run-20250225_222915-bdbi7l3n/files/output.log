@@ -1,0 +1,1029 @@
+
+Getting target values from /home/azstephe/liverRegression/regression_liver/data/splits/logPos/mouse_liver_TRAINONLY.narrowPeak...
+ 54%|█████▍    | 8814/16250 [00:01<00:01, 6459.42it/s]
+Checking target values...
+Getting target values from /home/azstephe/liverRegression/regression_liver/data/splits/logPos/mouse_liver_VAL.narrowPeak...
+100%|██████████| 16250/16250 [00:02<00:00, 6316.85it/s]
+100%|██████████| 8749/8749 [00:00<00:00, 1092499.50it/s]
+100%|██████████| 2016/2016 [00:00<00:00, 6168.15it/s]
+100%|██████████| 1293/1293 [00:00<00:00, 854725.78it/s]
+wandb: WARNING The save_model argument by default saves the model in the HDF5 format that cannot save custom objects like subclassed models and custom layers. This behavior will be deprecated in a future release in favor of the SavedModel format. Meanwhile, the HDF5 model is saved as W&B files and the SavedModel as W&B Artifacts.
+Checking target values...
+100%|██████████| 1/1 [00:00<00:00, 9510.89it/s]
+Getting target values from /home/azstephe/liverRegression/regression_liver/data/splits/logPos/mouse_liver_VAL.narrowPeak...
+Checking target values...
+100%|██████████| 2016/2016 [00:00<00:00, 6355.34it/s]
+100%|██████████| 1292/1292 [00:00<00:00, 895857.29it/s]
+Getting target values from /home/azstephe/liverRegression/regression_liver/data/splits/logPos/mouse_liver_TRAINONLY.narrowPeak...
+ 36%|███▌      | 5816/16250 [00:00<00:01, 6240.56it/s]
+100%|██████████| 16250/16250 [00:02<00:00, 6340.11it/s]
+100%|██████████| 8748/8748 [00:00<00:00, 1187781.92it/s]
+Checking target values...
+100%|██████████| 1/1 [00:00<00:00, 2265.97it/s]
+Getting target values from /home/azstephe/liverRegression/regression_liver/data/splits/log_val2/macaque_liver_VAL.narrowPeak...
+Checking target values...
+100%|██████████| 331/331 [00:00<00:00, 6415.80it/s]
+100%|██████████| 330/330 [00:00<00:00, 514925.71it/s]
+Getting target values from /home/azstephe/liverRegression/regression_liver/data/splits/log_val3/macaque_liver_VAL.narrowPeak...
+Checking target values...
+Checking target values...
+100%|██████████| 887/887 [00:00<00:00, 6584.07it/s]
+100%|██████████| 862/862 [00:00<00:00, 802194.37it/s]
+100%|██████████| 1/1 [00:00<00:00, 2540.46it/s]
+  0%|          | 0/404 [00:00<?, ?it/s]
+Getting target values from /home/azstephe/liverRegression/regression_liver/data/splits/log_val2/rat_liver_VAL.narrowPeak...
+Checking target values...
+Getting target values from /home/azstephe/liverRegression/regression_liver/data/splits/log_val3/rat_liver_VAL.narrowPeak...
+Checking target values...
+100%|██████████| 404/404 [00:00<00:00, 6310.49it/s]
+100%|██████████| 358/358 [00:00<00:00, 524288.00it/s]
+100%|██████████| 669/669 [00:00<00:00, 6554.41it/s]
+100%|██████████| 594/594 [00:00<00:00, 712443.97it/s]
+100%|██████████| 1/1 [00:00<00:00, 2322.43it/s]
+Getting target values from /home/azstephe/liverRegression/regression_liver/data/splits/log_val2/cow_liver_VAL.narrowPeak...
+Checking target values...
+WARNING: batch size is larger than size of dataset. This may cause unexpected issues during training.
+Getting target values from /home/azstephe/liverRegression/regression_liver/data/splits/log_val3/cow_liver_VAL.narrowPeak...
+100%|██████████| 194/194 [00:00<00:00, 6189.58it/s]
+100%|██████████| 193/193 [00:00<00:00, 724061.42it/s]
+  0%|          | 0/556 [00:00<?, ?it/s]
+Checking target values...
+100%|██████████| 556/556 [00:00<00:00, 6249.32it/s]
+100%|██████████| 511/511 [00:00<00:00, 653641.15it/s]
+100%|██████████| 1/1 [00:00<00:00, 2623.08it/s]
+Getting target values from /home/azstephe/liverRegression/regression_liver/data/splits/log_val2/pig_liver_VAL.narrowPeak...
+100%|██████████| 164/164 [00:00<00:00, 5916.77it/s]
+100%|██████████| 162/162 [00:00<00:00, 328249.88it/s]
+Checking target values...
+WARNING: batch size is larger than size of dataset. This may cause unexpected issues during training.
+Getting target values from /home/azstephe/liverRegression/regression_liver/data/splits/log_val3/pig_liver_VAL.narrowPeak...
+Checking target values...
+Epoch 1/50
+100%|██████████| 475/475 [00:00<00:00, 6465.97it/s]
+100%|██████████| 455/455 [00:00<00:00, 606807.10it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 1.3456 - mean_squared_error: 1.1939 - mean_absolute_error: 0.9963 - mean_absolute_percentage_error: 480228096.0000
+wandb: Adding directory to artifact (/projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/amyLiverRegression/repos/cnn_pipeline/wandb/run-20250225_222915-bdbi7l3n/files/model-best)... Done. 0.1s
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 1.3456 - mean_squared_error: 1.1939 - mean_absolute_error: 0.9963 - mean_absolute_percentage_error: 480228096.0000{'val_1_mean_squared_error': '0.1743', 'val_1_mean_absolute_error': '0.4173', 'val_1_mean_absolute_percentage_error': '4.173e+08', 'val_2_mean_squared_error': '2.886', 'val_2_mean_absolute_error': '1.61', 'val_2_mean_absolute_percentage_error': '77.7', 'val_3_mean_squared_error': '2.863', 'val_3_mean_absolute_error': '1.606', 'val_3_mean_absolute_percentage_error': '77.68', 'val_4_mean_squared_error': '0.1722', 'val_4_mean_absolute_error': '0.4149', 'val_4_mean_absolute_percentage_error': '4.149e+08', 'val_5_mean_squared_error': '3.256', 'val_5_mean_absolute_error': '1.736', 'val_5_mean_absolute_percentage_error': '79.24', 'val_6_mean_squared_error': '2.893', 'val_6_mean_absolute_error': '1.637', 'val_6_mean_absolute_percentage_error': '78.49', 'val_7_mean_squared_error': '0.1748', 'val_7_mean_absolute_error': '0.418', 'val_7_mean_absolute_percentage_error': '4.18e+08', 'val_8_mean_squared_error': '4.01', 'val_8_mean_absolute_error': '1.963', 'val_8_mean_absolute_percentage_error': '81.75', 'val_9_mean_squared_error': '3.368', 'val_9_mean_absolute_error': '1.794', 'val_9_mean_absolute_percentage_error': '80.46', 'val_10_mean_squared_error': '0.172', 'val_10_mean_absolute_error': '0.4146', 'val_10_mean_absolute_percentage_error': '4.146e+08', 'val_11_mean_squared_error': '4.608', 'val_11_mean_absolute_error': '2.077', 'val_11_mean_absolute_percentage_error': '82.03', 'val_12_mean_squared_error': '3.647', 'val_12_mean_absolute_error': '1.865', 'val_12_mean_absolute_percentage_error': '80.85', 'val_13_mean_squared_error': '0.1721', 'val_13_mean_absolute_error': '0.4147', 'val_13_mean_absolute_percentage_error': '4.147e+08', 'val_14_mean_squared_error': '4.397', 'val_14_mean_absolute_error': '2.036', 'val_14_mean_absolute_percentage_error': '81.9', 'val_15_mean_squared_error': '3.485', 'val_15_mean_absolute_error': '1.824', 'val_15_mean_absolute_percentage_error': '80.63', 'val_*_mean_squared_error_gm': '1.283', 'val_*_mean_absolute_error_gm': '1.108', 'val_*_mean_absolute_percentage_error_gm': '1.386e+04'}
+702/702 [==============================] - 115s 158ms/step - loss: 1.3456 - mean_squared_error: 1.1939 - mean_absolute_error: 0.9963 - mean_absolute_percentage_error: 480228096.0000 - val_loss: 1.5015 - val_mean_squared_error: 1.3620 - val_mean_absolute_error: 0.9397 - val_mean_absolute_percentage_error: 234536224.0000
+Epoch 2/50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 1.2442 - mean_squared_error: 1.1149 - mean_absolute_error: 0.9710 - mean_absolute_percentage_error: 477294016.0000
+wandb: Adding directory to artifact (/projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/amyLiverRegression/repos/cnn_pipeline/wandb/run-20250225_222915-bdbi7l3n/files/model-best)... Done. 0.1s
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 1.2442 - mean_squared_error: 1.1149 - mean_absolute_error: 0.9710 - mean_absolute_percentage_error: 477294016.0000{'val_1_mean_squared_error': '0.3202', 'val_1_mean_absolute_error': '0.5654', 'val_1_mean_absolute_percentage_error': '5.654e+08', 'val_2_mean_squared_error': '2.395', 'val_2_mean_absolute_error': '1.452', 'val_2_mean_absolute_percentage_error': '69.39', 'val_3_mean_squared_error': '2.376', 'val_3_mean_absolute_error': '1.448', 'val_3_mean_absolute_percentage_error': '69.4', 'val_4_mean_squared_error': '0.3121', 'val_4_mean_absolute_error': '0.5581', 'val_4_mean_absolute_percentage_error': '5.581e+08', 'val_5_mean_squared_error': '2.707', 'val_5_mean_absolute_error': '1.572', 'val_5_mean_absolute_percentage_error': '71.26', 'val_6_mean_squared_error': '2.403', 'val_6_mean_absolute_error': '1.48', 'val_6_mean_absolute_percentage_error': '70.52', 'val_7_mean_squared_error': '0.3235', 'val_7_mean_absolute_error': '0.5682', 'val_7_mean_absolute_percentage_error': '5.682e+08', 'val_8_mean_squared_error': '3.386', 'val_8_mean_absolute_error': '1.797', 'val_8_mean_absolute_percentage_error': '74.63', 'val_9_mean_squared_error': '2.825', 'val_9_mean_absolute_error': '1.636', 'val_9_mean_absolute_percentage_error': '73.17', 'val_10_mean_squared_error': '0.3121', 'val_10_mean_absolute_error': '0.5581', 'val_10_mean_absolute_percentage_error': '5.581e+08', 'val_11_mean_squared_error': '3.912', 'val_11_mean_absolute_error': '1.904', 'val_11_mean_absolute_percentage_error': '74.76', 'val_12_mean_squared_error': '3.06', 'val_12_mean_absolute_error': '1.7', 'val_12_mean_absolute_percentage_error': '73.44', 'val_13_mean_squared_error': '0.3129', 'val_13_mean_absolute_error': '0.5588', 'val_13_mean_absolute_percentage_error': '5.588e+08', 'val_14_mean_squared_error': '3.728', 'val_14_mean_absolute_error': '1.866', 'val_14_mean_absolute_percentage_error': '74.71', 'val_15_mean_squared_error': '2.922', 'val_15_mean_absolute_error': '1.663', 'val_15_mean_absolute_percentage_error': '73.25', 'val_*_mean_squared_error_gm': '1.394', 'val_*_mean_absolute_error_gm': '1.149', 'val_*_mean_absolute_percentage_error_gm': '1.434e+04'}
+702/702 [==============================] - 107s 152ms/step - loss: 1.2442 - mean_squared_error: 1.1149 - mean_absolute_error: 0.9710 - mean_absolute_percentage_error: 477294016.0000 - val_loss: 1.3494 - val_mean_squared_error: 1.2291 - val_mean_absolute_error: 0.9536 - val_mean_absolute_percentage_error: 317747648.0000
+Epoch 3/50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 1.1622 - mean_squared_error: 1.0490 - mean_absolute_error: 0.9297 - mean_absolute_percentage_error: 458595616.0000
+wandb: Adding directory to artifact (/projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/amyLiverRegression/repos/cnn_pipeline/wandb/run-20250225_222915-bdbi7l3n/files/model-best)... Done. 0.1s
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 1.1622 - mean_squared_error: 1.0490 - mean_absolute_error: 0.9297 - mean_absolute_percentage_error: 458595616.0000{'val_1_mean_squared_error': '0.2789', 'val_1_mean_absolute_error': '0.5258', 'val_1_mean_absolute_percentage_error': '5.258e+08', 'val_2_mean_squared_error': '2.424', 'val_2_mean_absolute_error': '1.466', 'val_2_mean_absolute_percentage_error': '70.38', 'val_3_mean_squared_error': '2.408', 'val_3_mean_absolute_error': '1.464', 'val_3_mean_absolute_percentage_error': '70.46', 'val_4_mean_squared_error': '0.2668', 'val_4_mean_absolute_error': '0.5141', 'val_4_mean_absolute_percentage_error': '5.141e+08', 'val_5_mean_squared_error': '2.728', 'val_5_mean_absolute_error': '1.581', 'val_5_mean_absolute_percentage_error': '71.89', 'val_6_mean_squared_error': '2.459', 'val_6_mean_absolute_error': '1.501', 'val_6_mean_absolute_percentage_error': '71.65', 'val_7_mean_squared_error': '0.2892', 'val_7_mean_absolute_error': '0.5355', 'val_7_mean_absolute_percentage_error': '5.355e+08', 'val_8_mean_squared_error': '3.381', 'val_8_mean_absolute_error': '1.796', 'val_8_mean_absolute_percentage_error': '74.62', 'val_9_mean_squared_error': '2.873', 'val_9_mean_absolute_error': '1.652', 'val_9_mean_absolute_percentage_error': '73.96', 'val_10_mean_squared_error': '0.2673', 'val_10_mean_absolute_error': '0.5146', 'val_10_mean_absolute_percentage_error': '5.146e+08', 'val_11_mean_squared_error': '3.89', 'val_11_mean_absolute_error': '1.901', 'val_11_mean_absolute_percentage_error': '74.83', 'val_12_mean_squared_error': '3.113', 'val_12_mean_absolute_error': '1.717', 'val_12_mean_absolute_percentage_error': '74.28', 'val_13_mean_squared_error': '0.2679', 'val_13_mean_absolute_error': '0.5152', 'val_13_mean_absolute_percentage_error': '5.152e+08', 'val_14_mean_squared_error': '3.699', 'val_14_mean_absolute_error': '1.862', 'val_14_mean_absolute_percentage_error': '74.7', 'val_15_mean_squared_error': '2.977', 'val_15_mean_absolute_error': '1.681', 'val_15_mean_absolute_percentage_error': '74.14', 'val_*_mean_squared_error_gm': '1.337', 'val_*_mean_absolute_error_gm': '1.126', 'val_*_mean_absolute_percentage_error_gm': '1.406e+04'}
+702/702 [==============================] - 107s 152ms/step - loss: 1.1622 - mean_squared_error: 1.0490 - mean_absolute_error: 0.9297 - mean_absolute_percentage_error: 458595616.0000 - val_loss: 1.3252 - val_mean_squared_error: 1.2184 - val_mean_absolute_error: 0.9376 - val_mean_absolute_percentage_error: 295507488.0000
+Epoch 4/50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 1.0763 - mean_squared_error: 0.9749 - mean_absolute_error: 0.8755 - mean_absolute_percentage_error: 426742240.0000
+wandb: Adding directory to artifact (/projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/amyLiverRegression/repos/cnn_pipeline/wandb/run-20250225_222915-bdbi7l3n/files/model-best)... Done. 0.1s
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 1.0763 - mean_squared_error: 0.9749 - mean_absolute_error: 0.8755 - mean_absolute_percentage_error: 426742240.0000{'val_1_mean_squared_error': '0.3473', 'val_1_mean_absolute_error': '0.5818', 'val_1_mean_absolute_percentage_error': '5.818e+08', 'val_2_mean_squared_error': '2.101', 'val_2_mean_absolute_error': '1.358', 'val_2_mean_absolute_percentage_error': '65.02', 'val_3_mean_squared_error': '2.09', 'val_3_mean_absolute_error': '1.357', 'val_3_mean_absolute_percentage_error': '65.15', 'val_4_mean_squared_error': '0.3138', 'val_4_mean_absolute_error': '0.5513', 'val_4_mean_absolute_percentage_error': '5.513e+08', 'val_5_mean_squared_error': '2.341', 'val_5_mean_absolute_error': '1.458', 'val_5_mean_absolute_percentage_error': '66.17', 'val_6_mean_squared_error': '2.167', 'val_6_mean_absolute_error': '1.402', 'val_6_mean_absolute_percentage_error': '66.76', 'val_7_mean_squared_error': '0.3759', 'val_7_mean_absolute_error': '0.6058', 'val_7_mean_absolute_percentage_error': '6.058e+08', 'val_8_mean_squared_error': '2.913', 'val_8_mean_absolute_error': '1.661', 'val_8_mean_absolute_percentage_error': '68.82', 'val_9_mean_squared_error': '2.546', 'val_9_mean_absolute_error': '1.551', 'val_9_mean_absolute_percentage_error': '69.36', 'val_10_mean_squared_error': '0.3187', 'val_10_mean_absolute_error': '0.5556', 'val_10_mean_absolute_percentage_error': '5.556e+08', 'val_11_mean_squared_error': '3.339', 'val_11_mean_absolute_error': '1.755', 'val_11_mean_absolute_percentage_error': '68.84', 'val_12_mean_squared_error': '2.715', 'val_12_mean_absolute_error': '1.597', 'val_12_mean_absolute_percentage_error': '68.9', 'val_13_mean_squared_error': '0.3203', 'val_13_mean_absolute_error': '0.5567', 'val_13_mean_absolute_percentage_error': '5.567e+08', 'val_14_mean_squared_error': '3.199', 'val_14_mean_absolute_error': '1.724', 'val_14_mean_absolute_percentage_error': '68.92', 'val_15_mean_squared_error': '2.627', 'val_15_mean_absolute_error': '1.574', 'val_15_mean_absolute_percentage_error': '69.25', 'val_*_mean_squared_error_gm': '1.302', 'val_*_mean_absolute_error_gm': '1.104', 'val_*_mean_absolute_percentage_error_gm': '1.377e+04'}
+702/702 [==============================] - 107s 152ms/step - loss: 1.0763 - mean_squared_error: 0.9749 - mean_absolute_error: 0.8755 - mean_absolute_percentage_error: 426742240.0000 - val_loss: 1.2118 - val_mean_squared_error: 1.1156 - val_mean_absolute_error: 0.9217 - val_mean_absolute_percentage_error: 326964064.0000
+Epoch 5/50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 1.0032 - mean_squared_error: 0.9107 - mean_absolute_error: 0.8261 - mean_absolute_percentage_error: 400232384.0000
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 1.0032 - mean_squared_error: 0.9107 - mean_absolute_error: 0.8261 - mean_absolute_percentage_error: 400232384.0000{'val_1_mean_squared_error': '0.2365', 'val_1_mean_absolute_error': '0.4778', 'val_1_mean_absolute_percentage_error': '4.778e+08', 'val_2_mean_squared_error': '2.299', 'val_2_mean_absolute_error': '1.43', 'val_2_mean_absolute_percentage_error': '69.05', 'val_3_mean_squared_error': '2.287', 'val_3_mean_absolute_error': '1.43', 'val_3_mean_absolute_percentage_error': '69.19', 'val_4_mean_squared_error': '0.2073', 'val_4_mean_absolute_error': '0.4473', 'val_4_mean_absolute_percentage_error': '4.473e+08', 'val_5_mean_squared_error': '2.541', 'val_5_mean_absolute_error': '1.525', 'val_5_mean_absolute_percentage_error': '69.59', 'val_6_mean_squared_error': '2.433', 'val_6_mean_absolute_error': '1.494', 'val_6_mean_absolute_percentage_error': '71.53', 'val_7_mean_squared_error': '0.2633', 'val_7_mean_absolute_error': '0.5029', 'val_7_mean_absolute_percentage_error': '5.029e+08', 'val_8_mean_squared_error': '3.084', 'val_8_mean_absolute_error': '1.71', 'val_8_mean_absolute_percentage_error': '71.04', 'val_9_mean_squared_error': '2.826', 'val_9_mean_absolute_error': '1.639', 'val_9_mean_absolute_percentage_error': '73.52', 'val_10_mean_squared_error': '0.2138', 'val_10_mean_absolute_error': '0.4538', 'val_10_mean_absolute_percentage_error': '4.538e+08', 'val_11_mean_squared_error': '3.481', 'val_11_mean_absolute_error': '1.799', 'val_11_mean_absolute_percentage_error': '71.0', 'val_12_mean_squared_error': '2.956', 'val_12_mean_absolute_error': '1.671', 'val_12_mean_absolute_percentage_error': '72.28', 'val_13_mean_squared_error': '0.2161', 'val_13_mean_absolute_error': '0.4553', 'val_13_mean_absolute_percentage_error': '4.553e+08', 'val_14_mean_squared_error': '3.373', 'val_14_mean_absolute_error': '1.775', 'val_14_mean_absolute_percentage_error': '71.26', 'val_15_mean_squared_error': '2.903', 'val_15_mean_absolute_error': '1.658', 'val_15_mean_absolute_percentage_error': '73.19', 'val_*_mean_squared_error_gm': '1.208', 'val_*_mean_absolute_error_gm': '1.065', 'val_*_mean_absolute_percentage_error_gm': '1.332e+04'}
+702/702 [==============================] - 104s 149ms/step - loss: 1.0032 - mean_squared_error: 0.9107 - mean_absolute_error: 0.8261 - mean_absolute_percentage_error: 400232384.0000 - val_loss: 1.2289 - val_mean_squared_error: 1.1396 - val_mean_absolute_error: 0.8949 - val_mean_absolute_percentage_error: 268510496.0000
+Epoch 6/50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.9604 - mean_squared_error: 0.8735 - mean_absolute_error: 0.7953 - mean_absolute_percentage_error: 384037856.0000
+wandb: Adding directory to artifact (/projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/amyLiverRegression/repos/cnn_pipeline/wandb/run-20250225_222915-bdbi7l3n/files/model-best)... Done. 0.1s
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.9604 - mean_squared_error: 0.8735 - mean_absolute_error: 0.7953 - mean_absolute_percentage_error: 384037856.0000{'val_1_mean_squared_error': '0.3228', 'val_1_mean_absolute_error': '0.5556', 'val_1_mean_absolute_percentage_error': '5.556e+08', 'val_2_mean_squared_error': '1.949', 'val_2_mean_absolute_error': '1.306', 'val_2_mean_absolute_percentage_error': '62.71', 'val_3_mean_squared_error': '1.934', 'val_3_mean_absolute_error': '1.304', 'val_3_mean_absolute_percentage_error': '62.75', 'val_4_mean_squared_error': '0.2888', 'val_4_mean_absolute_error': '0.5254', 'val_4_mean_absolute_percentage_error': '5.254e+08', 'val_5_mean_squared_error': '2.15', 'val_5_mean_absolute_error': '1.393', 'val_5_mean_absolute_percentage_error': '63.3', 'val_6_mean_squared_error': '2.082', 'val_6_mean_absolute_error': '1.373', 'val_6_mean_absolute_percentage_error': '65.52', 'val_7_mean_squared_error': '0.3707', 'val_7_mean_absolute_error': '0.5948', 'val_7_mean_absolute_percentage_error': '5.948e+08', 'val_8_mean_squared_error': '2.629', 'val_8_mean_absolute_error': '1.572', 'val_8_mean_absolute_percentage_error': '65.15', 'val_9_mean_squared_error': '2.433', 'val_9_mean_absolute_error': '1.515', 'val_9_mean_absolute_percentage_error': '67.83', 'val_10_mean_squared_error': '0.2986', 'val_10_mean_absolute_error': '0.5334', 'val_10_mean_absolute_percentage_error': '5.334e+08', 'val_11_mean_squared_error': '3.022', 'val_11_mean_absolute_error': '1.669', 'val_11_mean_absolute_percentage_error': '65.65', 'val_12_mean_squared_error': '2.574', 'val_12_mean_absolute_error': '1.552', 'val_12_mean_absolute_percentage_error': '67.01', 'val_13_mean_squared_error': '0.3', 'val_13_mean_absolute_error': '0.5335', 'val_13_mean_absolute_percentage_error': '5.335e+08', 'val_14_mean_squared_error': '2.911', 'val_14_mean_absolute_error': '1.642', 'val_14_mean_absolute_percentage_error': '65.76', 'val_15_mean_squared_error': '2.546', 'val_15_mean_absolute_error': '1.547', 'val_15_mean_absolute_percentage_error': '68.18', 'val_*_mean_squared_error_gm': '1.218', 'val_*_mean_absolute_error_gm': '1.064', 'val_*_mean_absolute_percentage_error_gm': '1.328e+04'}
+702/702 [==============================] - 107s 153ms/step - loss: 0.9604 - mean_squared_error: 0.8735 - mean_absolute_error: 0.7953 - mean_absolute_percentage_error: 384037856.0000 - val_loss: 1.1195 - val_mean_squared_error: 1.0351 - val_mean_absolute_error: 0.8843 - val_mean_absolute_percentage_error: 312270880.0000
+Epoch 7/50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.9331 - mean_squared_error: 0.8504 - mean_absolute_error: 0.7757 - mean_absolute_percentage_error: 373798432.0000
+wandb: Adding directory to artifact (/projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/amyLiverRegression/repos/cnn_pipeline/wandb/run-20250225_222915-bdbi7l3n/files/model-best)... Done. 0.1s
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.9331 - mean_squared_error: 0.8504 - mean_absolute_error: 0.7757 - mean_absolute_percentage_error: 373798432.0000{'val_1_mean_squared_error': '0.4492', 'val_1_mean_absolute_error': '0.6539', 'val_1_mean_absolute_percentage_error': '6.539e+08', 'val_2_mean_squared_error': '1.577', 'val_2_mean_absolute_error': '1.156', 'val_2_mean_absolute_percentage_error': '55.04', 'val_3_mean_squared_error': '1.564', 'val_3_mean_absolute_error': '1.154', 'val_3_mean_absolute_percentage_error': '55.07', 'val_4_mean_squared_error': '0.4075', 'val_4_mean_absolute_error': '0.6216', 'val_4_mean_absolute_percentage_error': '6.216e+08', 'val_5_mean_squared_error': '1.704', 'val_5_mean_absolute_error': '1.219', 'val_5_mean_absolute_percentage_error': '54.97', 'val_6_mean_squared_error': '1.752', 'val_6_mean_absolute_error': '1.246', 'val_6_mean_absolute_percentage_error': '59.12', 'val_7_mean_squared_error': '0.5204', 'val_7_mean_absolute_error': '0.7031', 'val_7_mean_absolute_percentage_error': '7.031e+08', 'val_8_mean_squared_error': '2.115', 'val_8_mean_absolute_error': '1.393', 'val_8_mean_absolute_percentage_error': '57.45', 'val_9_mean_squared_error': '2.059', 'val_9_mean_absolute_error': '1.384', 'val_9_mean_absolute_percentage_error': '61.76', 'val_10_mean_squared_error': '0.4272', 'val_10_mean_absolute_error': '0.6342', 'val_10_mean_absolute_percentage_error': '6.342e+08', 'val_11_mean_squared_error': '2.436', 'val_11_mean_absolute_error': '1.487', 'val_11_mean_absolute_percentage_error': '58.4', 'val_12_mean_squared_error': '2.192', 'val_12_mean_absolute_error': '1.422', 'val_12_mean_absolute_percentage_error': '61.14', 'val_13_mean_squared_error': '0.428', 'val_13_mean_absolute_error': '0.6339', 'val_13_mean_absolute_percentage_error': '6.339e+08', 'val_14_mean_squared_error': '2.299', 'val_14_mean_absolute_error': '1.445', 'val_14_mean_absolute_percentage_error': '57.67', 'val_15_mean_squared_error': '2.132', 'val_15_mean_absolute_error': '1.405', 'val_15_mean_absolute_percentage_error': '61.81', 'val_*_mean_squared_error_gm': '1.196', 'val_*_mean_absolute_error_gm': '1.045', 'val_*_mean_absolute_percentage_error_gm': '1.3e+04'}
+702/702 [==============================] - 107s 153ms/step - loss: 0.9331 - mean_squared_error: 0.8504 - mean_absolute_error: 0.7757 - mean_absolute_percentage_error: 373798432.0000 - val_loss: 1.0240 - val_mean_squared_error: 0.9433 - val_mean_absolute_error: 0.8739 - val_mean_absolute_percentage_error: 367522176.0000
+Epoch 8/50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.9025 - mean_squared_error: 0.8230 - mean_absolute_error: 0.7566 - mean_absolute_percentage_error: 365225760.0000
+
+wandb: Adding directory to artifact (/projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/amyLiverRegression/repos/cnn_pipeline/wandb/run-20250225_222915-bdbi7l3n/files/model-best)... Done. 0.1s
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.9025 - mean_squared_error: 0.8230 - mean_absolute_error: 0.7566 - mean_absolute_percentage_error: 365225760.0000{'val_1_mean_squared_error': '0.4078', 'val_1_mean_absolute_error': '0.6185', 'val_1_mean_absolute_percentage_error': '6.185e+08', 'val_2_mean_squared_error': '1.58', 'val_2_mean_absolute_error': '1.159', 'val_2_mean_absolute_percentage_error': '55.38', 'val_3_mean_squared_error': '1.568', 'val_3_mean_absolute_error': '1.158', 'val_3_mean_absolute_percentage_error': '55.45', 'val_4_mean_squared_error': '0.3594', 'val_4_mean_absolute_error': '0.5794', 'val_4_mean_absolute_percentage_error': '5.794e+08', 'val_5_mean_squared_error': '1.716', 'val_5_mean_absolute_error': '1.227', 'val_5_mean_absolute_percentage_error': '55.57', 'val_6_mean_squared_error': '1.785', 'val_6_mean_absolute_error': '1.26', 'val_6_mean_absolute_percentage_error': '59.92', 'val_7_mean_squared_error': '0.4844', 'val_7_mean_absolute_error': '0.6727', 'val_7_mean_absolute_percentage_error': '6.727e+08', 'val_8_mean_squared_error': '2.096', 'val_8_mean_absolute_error': '1.388', 'val_8_mean_absolute_percentage_error': '57.29', 'val_9_mean_squared_error': '2.08', 'val_9_mean_absolute_error': '1.391', 'val_9_mean_absolute_percentage_error': '62.2', 'val_10_mean_squared_error': '0.381', 'val_10_mean_absolute_error': '0.5942', 'val_10_mean_absolute_percentage_error': '5.942e+08', 'val_11_mean_squared_error': '2.447', 'val_11_mean_absolute_error': '1.492', 'val_11_mean_absolute_percentage_error': '58.65', 'val_12_mean_squared_error': '2.2', 'val_12_mean_absolute_error': '1.424', 'val_12_mean_absolute_percentage_error': '61.33', 'val_13_mean_squared_error': '0.3839', 'val_13_mean_absolute_error': '0.5954', 'val_13_mean_absolute_percentage_error': '5.954e+08', 'val_14_mean_squared_error': '2.326', 'val_14_mean_absolute_error': '1.456', 'val_14_mean_absolute_percentage_error': '58.23', 'val_15_mean_squared_error': '2.163', 'val_15_mean_absolute_error': '1.414', 'val_15_mean_absolute_percentage_error': '62.26', 'val_*_mean_squared_error_gm': '1.16', 'val_*_mean_absolute_error_gm': '1.027', 'val_*_mean_absolute_percentage_error_gm': '1.28e+04'}
+702/702 [==============================] - 107s 152ms/step - loss: 0.9025 - mean_squared_error: 0.8230 - mean_absolute_error: 0.7566 - mean_absolute_percentage_error: 365225760.0000 - val_loss: 0.9996 - val_mean_squared_error: 0.9211 - val_mean_absolute_error: 0.8553 - val_mean_absolute_percentage_error: 347637696.0000
+
+100%|██████████| 15/15 [00:27<00:00,  1.86s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.8901 - mean_squared_error: 0.8122 - mean_absolute_error: 0.7473 - mean_absolute_percentage_error: 359826112.0000
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.8901 - mean_squared_error: 0.8122 - mean_absolute_error: 0.7473 - mean_absolute_percentage_error: 359826112.0000{'val_1_mean_squared_error': '0.3042', 'val_1_mean_absolute_error': '0.5287', 'val_1_mean_absolute_percentage_error': '5.287e+08', 'val_2_mean_squared_error': '1.746', 'val_2_mean_absolute_error': '1.223', 'val_2_mean_absolute_percentage_error': '58.87', 'val_3_mean_squared_error': '1.733', 'val_3_mean_absolute_error': '1.222', 'val_3_mean_absolute_percentage_error': '58.95', 'val_4_mean_squared_error': '0.2743', 'val_4_mean_absolute_error': '0.5017', 'val_4_mean_absolute_percentage_error': '5.017e+08', 'val_5_mean_squared_error': '1.878', 'val_5_mean_absolute_error': '1.283', 'val_5_mean_absolute_percentage_error': '58.47', 'val_6_mean_squared_error': '2.023', 'val_6_mean_absolute_error': '1.348', 'val_6_mean_absolute_percentage_error': '64.46', 'val_7_mean_squared_error': '0.3715', 'val_7_mean_absolute_error': '0.5802', 'val_7_mean_absolute_percentage_error': '5.802e+08', 'val_8_mean_squared_error': '2.246', 'val_8_mean_absolute_error': '1.433', 'val_8_mean_absolute_percentage_error': '59.31', 'val_9_mean_squared_error': '2.326', 'val_9_mean_absolute_error': '1.473', 'val_9_mean_absolute_percentage_error': '66.07', 'val_10_mean_squared_error': '0.295', 'val_10_mean_absolute_error': '0.5161', 'val_10_mean_absolute_percentage_error': '5.161e+08', 'val_11_mean_squared_error': '2.612', 'val_11_mean_absolute_error': '1.545', 'val_11_mean_absolute_percentage_error': '61.23', 'val_12_mean_squared_error': '2.488', 'val_12_mean_absolute_error': '1.518', 'val_12_mean_absolute_percentage_error': '65.62', 'val_13_mean_squared_error': '0.298', 'val_13_mean_absolute_error': '0.5175', 'val_13_mean_absolute_percentage_error': '5.175e+08', 'val_14_mean_squared_error': '2.463', 'val_14_mean_absolute_error': '1.499', 'val_14_mean_absolute_percentage_error': '60.26', 'val_15_mean_squared_error': '2.429', 'val_15_mean_absolute_error': '1.501', 'val_15_mean_absolute_percentage_error': '66.3', 'val_*_mean_squared_error_gm': '1.131', 'val_*_mean_absolute_error_gm': '1.011', 'val_*_mean_absolute_percentage_error_gm': '1.265e+04'}
+702/702 [==============================] - 104s 149ms/step - loss: 0.8901 - mean_squared_error: 0.8122 - mean_absolute_error: 0.7473 - mean_absolute_percentage_error: 359826112.0000 - val_loss: 1.0128 - val_mean_squared_error: 0.9356 - val_mean_absolute_error: 0.8329 - val_mean_absolute_percentage_error: 297160000.0000
+Epoch 10/50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.8736 - mean_squared_error: 0.7965 - mean_absolute_error: 0.7352 - mean_absolute_percentage_error: 353099392.0000
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.8736 - mean_squared_error: 0.7965 - mean_absolute_error: 0.7352 - mean_absolute_percentage_error: 353099392.0000{'val_1_mean_squared_error': '0.3287', 'val_1_mean_absolute_error': '0.5537', 'val_1_mean_absolute_percentage_error': '5.537e+08', 'val_2_mean_squared_error': '1.704', 'val_2_mean_absolute_error': '1.209', 'val_2_mean_absolute_percentage_error': '58.14', 'val_3_mean_squared_error': '1.689', 'val_3_mean_absolute_error': '1.206', 'val_3_mean_absolute_percentage_error': '58.1', 'val_4_mean_squared_error': '0.2911', 'val_4_mean_absolute_error': '0.5206', 'val_4_mean_absolute_percentage_error': '5.206e+08', 'val_5_mean_squared_error': '1.857', 'val_5_mean_absolute_error': '1.276', 'val_5_mean_absolute_percentage_error': '58.06', 'val_6_mean_squared_error': '1.965', 'val_6_mean_absolute_error': '1.327', 'val_6_mean_absolute_percentage_error': '63.37', 'val_7_mean_squared_error': '0.3968', 'val_7_mean_absolute_error': '0.6039', 'val_7_mean_absolute_percentage_error': '6.039e+08', 'val_8_mean_squared_error': '2.212', 'val_8_mean_absolute_error': '1.421', 'val_8_mean_absolute_percentage_error': '58.75', 'val_9_mean_squared_error': '2.26', 'val_9_mean_absolute_error': '1.453', 'val_9_mean_absolute_percentage_error': '65.09', 'val_10_mean_squared_error': '0.3112', 'val_10_mean_absolute_error': '0.5347', 'val_10_mean_absolute_percentage_error': '5.347e+08', 'val_11_mean_squared_error': '2.57', 'val_11_mean_absolute_error': '1.532', 'val_11_mean_absolute_percentage_error': '60.61', 'val_12_mean_squared_error': '2.416', 'val_12_mean_absolute_error': '1.495', 'val_12_mean_absolute_percentage_error': '64.57', 'val_13_mean_squared_error': '0.3158', 'val_13_mean_absolute_error': '0.5371', 'val_13_mean_absolute_percentage_error': '5.371e+08', 'val_14_mean_squared_error': '2.451', 'val_14_mean_absolute_error': '1.495', 'val_14_mean_absolute_percentage_error': '60.03', 'val_15_mean_squared_error': '2.361', 'val_15_mean_absolute_error': '1.479', 'val_15_mean_absolute_percentage_error': '65.27', 'val_*_mean_squared_error_gm': '1.139', 'val_*_mean_absolute_error_gm': '1.017', 'val_*_mean_absolute_percentage_error_gm': '1.271e+04'}
+702/702 [==============================] - 104s 148ms/step - loss: 0.8736 - mean_squared_error: 0.7965 - mean_absolute_error: 0.7352 - mean_absolute_percentage_error: 353099392.0000 - val_loss: 1.0083 - val_mean_squared_error: 0.9312 - val_mean_absolute_error: 0.8406 - val_mean_absolute_percentage_error: 311216768.0000
+Epoch 11/50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.8678 - mean_squared_error: 0.7896 - mean_absolute_error: 0.7300 - mean_absolute_percentage_error: 350275328.0000
+wandb: Adding directory to artifact (/projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/amyLiverRegression/repos/cnn_pipeline/wandb/run-20250225_222915-bdbi7l3n/files/model-best)... Done. 0.1s
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.8678 - mean_squared_error: 0.7896 - mean_absolute_error: 0.7300 - mean_absolute_percentage_error: 350275328.0000{'val_1_mean_squared_error': '0.3834', 'val_1_mean_absolute_error': '0.5966', 'val_1_mean_absolute_percentage_error': '5.966e+08', 'val_2_mean_squared_error': '1.556', 'val_2_mean_absolute_error': '1.149', 'val_2_mean_absolute_percentage_error': '54.96', 'val_3_mean_squared_error': '1.541', 'val_3_mean_absolute_error': '1.146', 'val_3_mean_absolute_percentage_error': '54.98', 'val_4_mean_squared_error': '0.3341', 'val_4_mean_absolute_error': '0.5567', 'val_4_mean_absolute_percentage_error': '5.567e+08', 'val_5_mean_squared_error': '1.693', 'val_5_mean_absolute_error': '1.218', 'val_5_mean_absolute_percentage_error': '55.23', 'val_6_mean_squared_error': '1.793', 'val_6_mean_absolute_error': '1.263', 'val_6_mean_absolute_percentage_error': '60.15', 'val_7_mean_squared_error': '0.4654', 'val_7_mean_absolute_error': '0.6546', 'val_7_mean_absolute_percentage_error': '6.546e+08', 'val_8_mean_squared_error': '2.042', 'val_8_mean_absolute_error': '1.366', 'val_8_mean_absolute_percentage_error': '56.43', 'val_9_mean_squared_error': '2.073', 'val_9_mean_absolute_error': '1.388', 'val_9_mean_absolute_percentage_error': '62.14', 'val_10_mean_squared_error': '0.3547', 'val_10_mean_absolute_error': '0.5709', 'val_10_mean_absolute_percentage_error': '5.709e+08', 'val_11_mean_squared_error': '2.422', 'val_11_mean_absolute_error': '1.483', 'val_11_mean_absolute_percentage_error': '58.37', 'val_12_mean_squared_error': '2.2', 'val_12_mean_absolute_error': '1.424', 'val_12_mean_absolute_percentage_error': '61.38', 'val_13_mean_squared_error': '0.3594', 'val_13_mean_absolute_error': '0.5731', 'val_13_mean_absolute_percentage_error': '5.731e+08', 'val_14_mean_squared_error': '2.323', 'val_14_mean_absolute_error': '1.452', 'val_14_mean_absolute_percentage_error': '58.1', 'val_15_mean_squared_error': '2.188', 'val_15_mean_absolute_error': '1.42', 'val_15_mean_absolute_percentage_error': '62.56', 'val_*_mean_squared_error_gm': '1.131', 'val_*_mean_absolute_error_gm': '1.012', 'val_*_mean_absolute_percentage_error_gm': '1.261e+04'}
+702/702 [==============================] - 109s 155ms/step - loss: 0.8678 - mean_squared_error: 0.7896 - mean_absolute_error: 0.7300 - mean_absolute_percentage_error: 350275328.0000 - val_loss: 0.9755 - val_mean_squared_error: 0.8968 - val_mean_absolute_error: 0.8383 - val_mean_absolute_percentage_error: 335276608.0000
+Epoch 12/50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.8635 - mean_squared_error: 0.7841 - mean_absolute_error: 0.7253 - mean_absolute_percentage_error: 348099424.0000
+wandb: Adding directory to artifact (/projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/amyLiverRegression/repos/cnn_pipeline/wandb/run-20250225_222915-bdbi7l3n/files/model-best)... Done. 0.1s
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.8635 - mean_squared_error: 0.7841 - mean_absolute_error: 0.7253 - mean_absolute_percentage_error: 348099424.0000{'val_1_mean_squared_error': '0.3859', 'val_1_mean_absolute_error': '0.5948', 'val_1_mean_absolute_percentage_error': '5.948e+08', 'val_2_mean_squared_error': '1.485', 'val_2_mean_absolute_error': '1.12', 'val_2_mean_absolute_percentage_error': '53.66', 'val_3_mean_squared_error': '1.465', 'val_3_mean_absolute_error': '1.115', 'val_3_mean_absolute_percentage_error': '53.54', 'val_4_mean_squared_error': '0.3411', 'val_4_mean_absolute_error': '0.5586', 'val_4_mean_absolute_percentage_error': '5.586e+08', 'val_5_mean_squared_error': '1.634', 'val_5_mean_absolute_error': '1.196', 'val_5_mean_absolute_percentage_error': '54.36', 'val_6_mean_squared_error': '1.713', 'val_6_mean_absolute_error': '1.233', 'val_6_mean_absolute_percentage_error': '58.76', 'val_7_mean_squared_error': '0.4842', 'val_7_mean_absolute_error': '0.6639', 'val_7_mean_absolute_percentage_error': '6.639e+08', 'val_8_mean_squared_error': '1.957', 'val_8_mean_absolute_error': '1.335', 'val_8_mean_absolute_percentage_error': '55.09', 'val_9_mean_squared_error': '1.972', 'val_9_mean_absolute_error': '1.35', 'val_9_mean_absolute_percentage_error': '60.42', 'val_10_mean_squared_error': '0.3615', 'val_10_mean_absolute_error': '0.5721', 'val_10_mean_absolute_percentage_error': '5.721e+08', 'val_11_mean_squared_error': '2.399', 'val_11_mean_absolute_error': '1.477', 'val_11_mean_absolute_percentage_error': '58.25', 'val_12_mean_squared_error': '2.172', 'val_12_mean_absolute_error': '1.414', 'val_12_mean_absolute_percentage_error': '61.02', 'val_13_mean_squared_error': '0.3647', 'val_13_mean_absolute_error': '0.5732', 'val_13_mean_absolute_percentage_error': '5.732e+08', 'val_14_mean_squared_error': '2.26', 'val_14_mean_absolute_error': '1.432', 'val_14_mean_absolute_percentage_error': '57.43', 'val_15_mean_squared_error': '2.14', 'val_15_mean_absolute_error': '1.403', 'val_15_mean_absolute_percentage_error': '61.89', 'val_*_mean_squared_error_gm': '1.113', 'val_*_mean_absolute_error_gm': '1.001', 'val_*_mean_absolute_percentage_error_gm': '1.249e+04'}
+702/702 [==============================] - 107s 153ms/step - loss: 0.8635 - mean_squared_error: 0.7841 - mean_absolute_error: 0.7253 - mean_absolute_percentage_error: 348099424.0000 - val_loss: 0.9470 - val_mean_squared_error: 0.8674 - val_mean_absolute_error: 0.8249 - val_mean_absolute_percentage_error: 334308064.0000
+Epoch 13/50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.8470 - mean_squared_error: 0.7664 - mean_absolute_error: 0.7129 - mean_absolute_percentage_error: 340716832.0000
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.8470 - mean_squared_error: 0.7664 - mean_absolute_error: 0.7129 - mean_absolute_percentage_error: 340716832.0000{'val_1_mean_squared_error': '0.3542', 'val_1_mean_absolute_error': '0.5686', 'val_1_mean_absolute_percentage_error': '5.686e+08', 'val_2_mean_squared_error': '1.554', 'val_2_mean_absolute_error': '1.147', 'val_2_mean_absolute_percentage_error': '55.09', 'val_3_mean_squared_error': '1.531', 'val_3_mean_absolute_error': '1.142', 'val_3_mean_absolute_percentage_error': '54.98', 'val_4_mean_squared_error': '0.3067', 'val_4_mean_absolute_error': '0.5286', 'val_4_mean_absolute_percentage_error': '5.286e+08', 'val_5_mean_squared_error': '1.703', 'val_5_mean_absolute_error': '1.222', 'val_5_mean_absolute_percentage_error': '55.63', 'val_6_mean_squared_error': '1.802', 'val_6_mean_absolute_error': '1.265', 'val_6_mean_absolute_percentage_error': '60.39', 'val_7_mean_squared_error': '0.4434', 'val_7_mean_absolute_error': '0.6323', 'val_7_mean_absolute_percentage_error': '6.323e+08', 'val_8_mean_squared_error': '2.042', 'val_8_mean_absolute_error': '1.364', 'val_8_mean_absolute_percentage_error': '56.4', 'val_9_mean_squared_error': '2.069', 'val_9_mean_absolute_error': '1.384', 'val_9_mean_absolute_percentage_error': '62.0', 'val_10_mean_squared_error': '0.3288', 'val_10_mean_absolute_error': '0.5437', 'val_10_mean_absolute_percentage_error': '5.437e+08', 'val_11_mean_squared_error': '2.451', 'val_11_mean_absolute_error': '1.494', 'val_11_mean_absolute_percentage_error': '58.98', 'val_12_mean_squared_error': '2.242', 'val_12_mean_absolute_error': '1.437', 'val_12_mean_absolute_percentage_error': '62.04', 'val_13_mean_squared_error': '0.3333', 'val_13_mean_absolute_error': '0.5461', 'val_13_mean_absolute_percentage_error': '5.461e+08', 'val_14_mean_squared_error': '2.324', 'val_14_mean_absolute_error': '1.452', 'val_14_mean_absolute_percentage_error': '58.19', 'val_15_mean_squared_error': '2.213', 'val_15_mean_absolute_error': '1.428', 'val_15_mean_absolute_percentage_error': '63.01', 'val_*_mean_squared_error_gm': '1.107', 'val_*_mean_absolute_error_gm': '0.9974', 'val_*_mean_absolute_percentage_error_gm': '1.246e+04'}
+702/702 [==============================] - 104s 148ms/step - loss: 0.8470 - mean_squared_error: 0.7664 - mean_absolute_error: 0.7129 - mean_absolute_percentage_error: 340716832.0000 - val_loss: 0.9609 - val_mean_squared_error: 0.8795 - val_mean_absolute_error: 0.8221 - val_mean_absolute_percentage_error: 319539136.0000
+Epoch 14/50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.8397 - mean_squared_error: 0.7573 - mean_absolute_error: 0.7045 - mean_absolute_percentage_error: 337237568.0000
+
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.8397 - mean_squared_error: 0.7573 - mean_absolute_error: 0.7045 - mean_absolute_percentage_error: 337237568.0000{'val_1_mean_squared_error': '0.3413', 'val_1_mean_absolute_error': '0.5631', 'val_1_mean_absolute_percentage_error': '5.631e+08', 'val_2_mean_squared_error': '1.606', 'val_2_mean_absolute_error': '1.168', 'val_2_mean_absolute_percentage_error': '56.07', 'val_3_mean_squared_error': '1.579', 'val_3_mean_absolute_error': '1.161', 'val_3_mean_absolute_percentage_error': '55.88', 'val_4_mean_squared_error': '0.3154', 'val_4_mean_absolute_error': '0.5414', 'val_4_mean_absolute_percentage_error': '5.414e+08', 'val_5_mean_squared_error': '1.749', 'val_5_mean_absolute_error': '1.237', 'val_5_mean_absolute_percentage_error': '56.3', 'val_6_mean_squared_error': '1.864', 'val_6_mean_absolute_error': '1.29', 'val_6_mean_absolute_percentage_error': '61.61', 'val_7_mean_squared_error': '0.4231', 'val_7_mean_absolute_error': '0.6217', 'val_7_mean_absolute_percentage_error': '6.217e+08', 'val_8_mean_squared_error': '2.108', 'val_8_mean_absolute_error': '1.384', 'val_8_mean_absolute_percentage_error': '57.2', 'val_9_mean_squared_error': '2.126', 'val_9_mean_absolute_error': '1.405', 'val_9_mean_absolute_percentage_error': '62.97', 'val_10_mean_squared_error': '0.3364', 'val_10_mean_absolute_error': '0.5546', 'val_10_mean_absolute_percentage_error': '5.546e+08', 'val_11_mean_squared_error': '2.494', 'val_11_mean_absolute_error': '1.507', 'val_11_mean_absolute_percentage_error': '59.68', 'val_12_mean_squared_error': '2.36', 'val_12_mean_absolute_error': '1.478', 'val_12_mean_absolute_percentage_error': '63.92', 'val_13_mean_squared_error': '0.3392', 'val_13_mean_absolute_error': '0.5558', 'val_13_mean_absolute_percentage_error': '5.558e+08', 'val_14_mean_squared_error': '2.344', 'val_14_mean_absolute_error': '1.457', 'val_14_mean_absolute_percentage_error': '58.56', 'val_15_mean_squared_error': '2.302', 'val_15_mean_absolute_error': '1.459', 'val_15_mean_absolute_percentage_error': '64.45', 'val_*_mean_squared_error_gm': '1.128', 'val_*_mean_absolute_error_gm': '1.01', 'val_*_mean_absolute_percentage_error_gm': '1.262e+04'}
+702/702 [==============================] - 104s 148ms/step - loss: 0.8397 - mean_squared_error: 0.7573 - mean_absolute_error: 0.7045 - mean_absolute_percentage_error: 337237568.0000 - val_loss: 0.9781 - val_mean_squared_error: 0.8951 - val_mean_absolute_error: 0.8278 - val_mean_absolute_percentage_error: 316470944.0000
+Epoch 15/50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.8428 - mean_squared_error: 0.7589 - mean_absolute_error: 0.7061 - mean_absolute_percentage_error: 337566400.0000
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.8428 - mean_squared_error: 0.7589 - mean_absolute_error: 0.7061 - mean_absolute_percentage_error: 337566400.0000{'val_1_mean_squared_error': '0.3029', 'val_1_mean_absolute_error': '0.5334', 'val_1_mean_absolute_percentage_error': '5.334e+08', 'val_2_mean_squared_error': '1.768', 'val_2_mean_absolute_error': '1.226', 'val_2_mean_absolute_percentage_error': '58.97', 'val_3_mean_squared_error': '1.749', 'val_3_mean_absolute_error': '1.222', 'val_3_mean_absolute_percentage_error': '58.89', 'val_4_mean_squared_error': '0.2846', 'val_4_mean_absolute_error': '0.5166', 'val_4_mean_absolute_percentage_error': '5.166e+08', 'val_5_mean_squared_error': '1.893', 'val_5_mean_absolute_error': '1.28', 'val_5_mean_absolute_percentage_error': '58.29', 'val_6_mean_squared_error': '2.101', 'val_6_mean_absolute_error': '1.375', 'val_6_mean_absolute_percentage_error': '65.74', 'val_7_mean_squared_error': '0.3604', 'val_7_mean_absolute_error': '0.5751', 'val_7_mean_absolute_percentage_error': '5.751e+08', 'val_8_mean_squared_error': '2.254', 'val_8_mean_absolute_error': '1.424', 'val_8_mean_absolute_percentage_error': '58.95', 'val_9_mean_squared_error': '2.383', 'val_9_mean_absolute_error': '1.492', 'val_9_mean_absolute_percentage_error': '66.9', 'val_10_mean_squared_error': '0.3092', 'val_10_mean_absolute_error': '0.5323', 'val_10_mean_absolute_percentage_error': '5.323e+08', 'val_11_mean_squared_error': '2.588', 'val_11_mean_absolute_error': '1.536', 'val_11_mean_absolute_percentage_error': '61.15', 'val_12_mean_squared_error': '2.598', 'val_12_mean_absolute_error': '1.552', 'val_12_mean_absolute_percentage_error': '67.21', 'val_13_mean_squared_error': '0.3109', 'val_13_mean_absolute_error': '0.5326', 'val_13_mean_absolute_percentage_error': '5.326e+08', 'val_14_mean_squared_error': '2.418', 'val_14_mean_absolute_error': '1.478', 'val_14_mean_absolute_percentage_error': '59.48', 'val_15_mean_squared_error': '2.485', 'val_15_mean_absolute_error': '1.519', 'val_15_mean_absolute_percentage_error': '67.18', 'val_*_mean_squared_error_gm': '1.148', 'val_*_mean_absolute_error_gm': '1.02', 'val_*_mean_absolute_percentage_error_gm': '1.276e+04'}
+702/702 [==============================] - 104s 148ms/step - loss: 0.8428 - mean_squared_error: 0.7589 - mean_absolute_error: 0.7061 - mean_absolute_percentage_error: 337566400.0000 - val_loss: 1.0290 - val_mean_squared_error: 0.9444 - val_mean_absolute_error: 0.8367 - val_mean_absolute_percentage_error: 299809024.0000
+Epoch 16/50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.8390 - mean_squared_error: 0.7536 - mean_absolute_error: 0.7025 - mean_absolute_percentage_error: 335438976.0000
+wandb: Adding directory to artifact (/projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/amyLiverRegression/repos/cnn_pipeline/wandb/run-20250225_222915-bdbi7l3n/files/model-best)... Done. 0.1s
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.8390 - mean_squared_error: 0.7536 - mean_absolute_error: 0.7025 - mean_absolute_percentage_error: 335438976.0000{'val_1_mean_squared_error': '0.4142', 'val_1_mean_absolute_error': '0.6193', 'val_1_mean_absolute_percentage_error': '6.193e+08', 'val_2_mean_squared_error': '1.419', 'val_2_mean_absolute_error': '1.092', 'val_2_mean_absolute_percentage_error': '52.27', 'val_3_mean_squared_error': '1.394', 'val_3_mean_absolute_error': '1.085', 'val_3_mean_absolute_percentage_error': '52.08', 'val_4_mean_squared_error': '0.3716', 'val_4_mean_absolute_error': '0.5865', 'val_4_mean_absolute_percentage_error': '5.865e+08', 'val_5_mean_squared_error': '1.553', 'val_5_mean_absolute_error': '1.162', 'val_5_mean_absolute_percentage_error': '52.77', 'val_6_mean_squared_error': '1.643', 'val_6_mean_absolute_error': '1.202', 'val_6_mean_absolute_percentage_error': '57.19', 'val_7_mean_squared_error': '0.5146', 'val_7_mean_absolute_error': '0.6863', 'val_7_mean_absolute_percentage_error': '6.863e+08', 'val_8_mean_squared_error': '1.883', 'val_8_mean_absolute_error': '1.305', 'val_8_mean_absolute_percentage_error': '53.87', 'val_9_mean_squared_error': '1.886', 'val_9_mean_absolute_error': '1.316', 'val_9_mean_absolute_percentage_error': '58.84', 'val_10_mean_squared_error': '0.3953', 'val_10_mean_absolute_error': '0.6013', 'val_10_mean_absolute_percentage_error': '6.013e+08', 'val_11_mean_squared_error': '2.263', 'val_11_mean_absolute_error': '1.433', 'val_11_mean_absolute_percentage_error': '56.57', 'val_12_mean_squared_error': '2.115', 'val_12_mean_absolute_error': '1.391', 'val_12_mean_absolute_percentage_error': '59.98', 'val_13_mean_squared_error': '0.3957', 'val_13_mean_absolute_error': '0.6009', 'val_13_mean_absolute_percentage_error': '6.009e+08', 'val_14_mean_squared_error': '2.137', 'val_14_mean_absolute_error': '1.391', 'val_14_mean_absolute_percentage_error': '55.74', 'val_15_mean_squared_error': '2.075', 'val_15_mean_absolute_error': '1.379', 'val_15_mean_absolute_percentage_error': '60.78', 'val_*_mean_squared_error_gm': '1.109', 'val_*_mean_absolute_error_gm': '0.9986', 'val_*_mean_absolute_percentage_error_gm': '1.246e+04'}
+702/702 [==============================] - 106s 152ms/step - loss: 0.8390 - mean_squared_error: 0.7536 - mean_absolute_error: 0.7025 - mean_absolute_percentage_error: 335438976.0000 - val_loss: 0.9404 - val_mean_squared_error: 0.8543 - val_mean_absolute_error: 0.8262 - val_mean_absolute_percentage_error: 348039040.0000
+Epoch 17/50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.8330 - mean_squared_error: 0.7463 - mean_absolute_error: 0.6972 - mean_absolute_percentage_error: 332490304.0000
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.8330 - mean_squared_error: 0.7463 - mean_absolute_error: 0.6972 - mean_absolute_percentage_error: 332490304.0000{'val_1_mean_squared_error': '0.3807', 'val_1_mean_absolute_error': '0.5953', 'val_1_mean_absolute_percentage_error': '5.953e+08', 'val_2_mean_squared_error': '1.53', 'val_2_mean_absolute_error': '1.133', 'val_2_mean_absolute_percentage_error': '54.12', 'val_3_mean_squared_error': '1.51', 'val_3_mean_absolute_error': '1.129', 'val_3_mean_absolute_percentage_error': '54.11', 'val_4_mean_squared_error': '0.3528', 'val_4_mean_absolute_error': '0.5729', 'val_4_mean_absolute_percentage_error': '5.729e+08', 'val_5_mean_squared_error': '1.63', 'val_5_mean_absolute_error': '1.187', 'val_5_mean_absolute_percentage_error': '53.85', 'val_6_mean_squared_error': '1.809', 'val_6_mean_absolute_error': '1.266', 'val_6_mean_absolute_percentage_error': '60.36', 'val_7_mean_squared_error': '0.4581', 'val_7_mean_absolute_error': '0.6484', 'val_7_mean_absolute_percentage_error': '6.484e+08', 'val_8_mean_squared_error': '1.984', 'val_8_mean_absolute_error': '1.338', 'val_8_mean_absolute_percentage_error': '55.24', 'val_9_mean_squared_error': '2.065', 'val_9_mean_absolute_error': '1.382', 'val_9_mean_absolute_percentage_error': '61.86', 'val_10_mean_squared_error': '0.38', 'val_10_mean_absolute_error': '0.5893', 'val_10_mean_absolute_percentage_error': '5.893e+08', 'val_11_mean_squared_error': '2.356', 'val_11_mean_absolute_error': '1.465', 'val_11_mean_absolute_percentage_error': '57.99', 'val_12_mean_squared_error': '2.287', 'val_12_mean_absolute_error': '1.451', 'val_12_mean_absolute_percentage_error': '62.68', 'val_13_mean_squared_error': '0.3791', 'val_13_mean_absolute_error': '0.5884', 'val_13_mean_absolute_percentage_error': '5.884e+08', 'val_14_mean_squared_error': '2.185', 'val_14_mean_absolute_error': '1.408', 'val_14_mean_absolute_percentage_error': '56.49', 'val_15_mean_squared_error': '2.203', 'val_15_mean_absolute_error': '1.425', 'val_15_mean_absolute_percentage_error': '62.9', 'val_*_mean_squared_error_gm': '1.132', 'val_*_mean_absolute_error_gm': '1.01', 'val_*_mean_absolute_percentage_error_gm': '1.26e+04'}
+702/702 [==============================] - 104s 148ms/step - loss: 0.8330 - mean_squared_error: 0.7463 - mean_absolute_error: 0.6972 - mean_absolute_percentage_error: 332490304.0000 - val_loss: 0.9712 - val_mean_squared_error: 0.8839 - val_mean_absolute_error: 0.8306 - val_mean_absolute_percentage_error: 334573952.0000
+Epoch 18/50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.8244 - mean_squared_error: 0.7369 - mean_absolute_error: 0.6898 - mean_absolute_percentage_error: 328587840.0000
+
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.8244 - mean_squared_error: 0.7369 - mean_absolute_error: 0.6898 - mean_absolute_percentage_error: 328587840.0000{'val_1_mean_squared_error': '0.3644', 'val_1_mean_absolute_error': '0.5795', 'val_1_mean_absolute_percentage_error': '5.795e+08', 'val_2_mean_squared_error': '1.489', 'val_2_mean_absolute_error': '1.117', 'val_2_mean_absolute_percentage_error': '53.56', 'val_3_mean_squared_error': '1.463', 'val_3_mean_absolute_error': '1.11', 'val_3_mean_absolute_percentage_error': '53.39', 'val_4_mean_squared_error': '0.3373', 'val_4_mean_absolute_error': '0.5574', 'val_4_mean_absolute_percentage_error': '5.574e+08', 'val_5_mean_squared_error': '1.609', 'val_5_mean_absolute_error': '1.18', 'val_5_mean_absolute_percentage_error': '53.71', 'val_6_mean_squared_error': '1.766', 'val_6_mean_absolute_error': '1.25', 'val_6_mean_absolute_percentage_error': '59.7', 'val_7_mean_squared_error': '0.4541', 'val_7_mean_absolute_error': '0.6413', 'val_7_mean_absolute_percentage_error': '6.413e+08', 'val_8_mean_squared_error': '1.926', 'val_8_mean_absolute_error': '1.315', 'val_8_mean_absolute_percentage_error': '54.34', 'val_9_mean_squared_error': '2.009', 'val_9_mean_absolute_error': '1.36', 'val_9_mean_absolute_percentage_error': '60.94', 'val_10_mean_squared_error': '0.3626', 'val_10_mean_absolute_error': '0.5727', 'val_10_mean_absolute_percentage_error': '5.727e+08', 'val_11_mean_squared_error': '2.353', 'val_11_mean_absolute_error': '1.463', 'val_11_mean_absolute_percentage_error': '57.95', 'val_12_mean_squared_error': '2.271', 'val_12_mean_absolute_error': '1.445', 'val_12_mean_absolute_percentage_error': '62.49', 'val_13_mean_squared_error': '0.362', 'val_13_mean_absolute_error': '0.5717', 'val_13_mean_absolute_percentage_error': '5.717e+08', 'val_14_mean_squared_error': '2.209', 'val_14_mean_absolute_error': '1.412', 'val_14_mean_absolute_percentage_error': '56.7', 'val_15_mean_squared_error': '2.206', 'val_15_mean_absolute_error': '1.423', 'val_15_mean_absolute_percentage_error': '62.85', 'val_*_mean_squared_error_gm': '1.107', 'val_*_mean_absolute_error_gm': '0.9961', 'val_*_mean_absolute_percentage_error_gm': '1.244e+04'}
+702/702 [==============================] - 104s 148ms/step - loss: 0.8244 - mean_squared_error: 0.7369 - mean_absolute_error: 0.6898 - mean_absolute_percentage_error: 328587840.0000 - val_loss: 0.9450 - val_mean_squared_error: 0.8569 - val_mean_absolute_error: 0.8148 - val_mean_absolute_percentage_error: 325721024.0000
+Epoch 19/50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.8265 - mean_squared_error: 0.7377 - mean_absolute_error: 0.6909 - mean_absolute_percentage_error: 328696832.0000
+
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.8265 - mean_squared_error: 0.7377 - mean_absolute_error: 0.6909 - mean_absolute_percentage_error: 328696832.0000{'val_1_mean_squared_error': '0.3532', 'val_1_mean_absolute_error': '0.5697', 'val_1_mean_absolute_percentage_error': '5.697e+08', 'val_2_mean_squared_error': '1.536', 'val_2_mean_absolute_error': '1.129', 'val_2_mean_absolute_percentage_error': '54.14', 'val_3_mean_squared_error': '1.515', 'val_3_mean_absolute_error': '1.125', 'val_3_mean_absolute_percentage_error': '54.11', 'val_4_mean_squared_error': '0.3285', 'val_4_mean_absolute_error': '0.5478', 'val_4_mean_absolute_percentage_error': '5.478e+08', 'val_5_mean_squared_error': '1.61', 'val_5_mean_absolute_error': '1.163', 'val_5_mean_absolute_percentage_error': '52.85', 'val_6_mean_squared_error': '1.879', 'val_6_mean_absolute_error': '1.29', 'val_6_mean_absolute_percentage_error': '61.58', 'val_7_mean_squared_error': '0.4353', 'val_7_mean_absolute_error': '0.6256', 'val_7_mean_absolute_percentage_error': '6.256e+08', 'val_8_mean_squared_error': '1.911', 'val_8_mean_absolute_error': '1.297', 'val_8_mean_absolute_percentage_error': '53.57', 'val_9_mean_squared_error': '2.127', 'val_9_mean_absolute_error': '1.401', 'val_9_mean_absolute_percentage_error': '62.81', 'val_10_mean_squared_error': '0.3619', 'val_10_mean_absolute_error': '0.5671', 'val_10_mean_absolute_percentage_error': '5.671e+08', 'val_11_mean_squared_error': '2.229', 'val_11_mean_absolute_error': '1.418', 'val_11_mean_absolute_percentage_error': '56.43', 'val_12_mean_squared_error': '2.337', 'val_12_mean_absolute_error': '1.464', 'val_12_mean_absolute_percentage_error': '63.36', 'val_13_mean_squared_error': '0.3624', 'val_13_mean_absolute_error': '0.5667', 'val_13_mean_absolute_percentage_error': '5.667e+08', 'val_14_mean_squared_error': '2.076', 'val_14_mean_absolute_error': '1.36', 'val_14_mean_absolute_percentage_error': '54.73', 'val_15_mean_squared_error': '2.25', 'val_15_mean_absolute_error': '1.435', 'val_15_mean_absolute_percentage_error': '63.45', 'val_*_mean_squared_error_gm': '1.107', 'val_*_mean_absolute_error_gm': '0.9916', 'val_*_mean_absolute_percentage_error_gm': '1.239e+04'}
+702/702 [==============================] - 104s 148ms/step - loss: 0.8265 - mean_squared_error: 0.7377 - mean_absolute_error: 0.6909 - mean_absolute_percentage_error: 328696832.0000 - val_loss: 0.9605 - val_mean_squared_error: 0.8711 - val_mean_absolute_error: 0.8145 - val_mean_absolute_percentage_error: 320162464.0000
+Epoch 20/50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.8286 - mean_squared_error: 0.7386 - mean_absolute_error: 0.6915 - mean_absolute_percentage_error: 328489024.0000
+
+
+
+
+
+
+
+
+
+702/702 [==============================] - ETA: 0s - loss: 0.8286 - mean_squared_error: 0.7386 - mean_absolute_error: 0.6915 - mean_absolute_percentage_error: 328489024.0000{'val_1_mean_squared_error': '0.3799', 'val_1_mean_absolute_error': '0.5972', 'val_1_mean_absolute_percentage_error': '5.972e+08', 'val_2_mean_squared_error': '1.504', 'val_2_mean_absolute_error': '1.12', 'val_2_mean_absolute_percentage_error': '53.62', 'val_3_mean_squared_error': '1.478', 'val_3_mean_absolute_error': '1.113', 'val_3_mean_absolute_percentage_error': '53.44', 'val_4_mean_squared_error': '0.3632', 'val_4_mean_absolute_error': '0.5833', 'val_4_mean_absolute_percentage_error': '5.833e+08', 'val_5_mean_squared_error': '1.602', 'val_5_mean_absolute_error': '1.171', 'val_5_mean_absolute_percentage_error': '53.18', 'val_6_mean_squared_error': '1.808', 'val_6_mean_absolute_error': '1.265', 'val_6_mean_absolute_percentage_error': '60.32', 'val_7_mean_squared_error': '0.4591', 'val_7_mean_absolute_error': '0.6495', 'val_7_mean_absolute_percentage_error': '6.495e+08', 'val_8_mean_squared_error': '1.932', 'val_8_mean_absolute_error': '1.313', 'val_8_mean_absolute_percentage_error': '54.21', 'val_9_mean_squared_error': '2.044', 'val_9_mean_absolute_error': '1.372', 'val_9_mean_absolute_percentage_error': '61.47', 'val_10_mean_squared_error': '0.3917', 'val_10_mean_absolute_error': '0.5993', 'val_10_mean_absolute_percentage_error': '5.993e+08', 'val_11_mean_squared_error': '2.292', 'val_11_mean_absolute_error': '1.442', 'val_11_mean_absolute_percentage_error': '57.19', 'val_12_mean_squared_error': '2.296', 'val_12_mean_absolute_error': '1.453', 'val_12_mean_absolute_percentage_error': '62.85', 'val_13_mean_squared_error': '0.391', 'val_13_mean_absolute_error': '0.5983', 'val_13_mean_absolute_percentage_error': '5.983e+08', 'val_14_mean_squared_error': '2.118', 'val_14_mean_absolute_error': '1.379', 'val_14_mean_absolute_percentage_error': '55.38', 'val_15_mean_squared_error': '2.212', 'val_15_mean_absolute_error': '1.425', 'val_15_mean_absolute_percentage_error': '62.93', 'val_*_mean_squared_error_gm': '1.128', 'val_*_mean_absolute_error_gm': '1.007', 'val_*_mean_absolute_percentage_error_gm': '1.258e+04'}
+702/702 [==============================] - 104s 148ms/step - loss: 0.8286 - mean_squared_error: 0.7386 - mean_absolute_error: 0.6915 - mean_absolute_percentage_error: 328489024.0000 - val_loss: 0.9627 - val_mean_squared_error: 0.8723 - val_mean_absolute_error: 0.8262 - val_mean_absolute_percentage_error: 335632160.0000
+Epoch 00020: early stopping

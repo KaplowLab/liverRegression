@@ -1,0 +1,254 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.6
+    framework: keras
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.9.15
+    start_time: 1740540555.851604
+    t:
+      1:
+      - 2
+      - 3
+      - 55
+      2:
+      - 2
+      - 3
+      - 55
+      3:
+      - 3
+      - 8
+      - 14
+      - 16
+      - 23
+      - 37
+      4: 3.9.15
+      5: 0.13.6
+      8:
+      - 8
+      10:
+      - 9
+additional_val_data_paths:
+  desc: null
+  value:
+  - - genome: /projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/MouseGenome/mm10.fa
+      intervals: /home/azstephe/liverRegression/regression_liver/data/splits/negatives/nonMouse_liver_andRat_andCow_andPig_andMacaque_VAL_500bp.bed
+  - - genome: /projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/MouseGenome/mm10.fa
+      intervals: /home/azstephe/liverRegression/regression_liver/data/splits/logPos/mouse_liver_VAL.narrowPeak
+  - - genome: /projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/MouseGenome/mm10.fa
+      intervals: /home/azstephe/liverRegression/regression_liver/data/splits/logPos/mouse_liver_TRAINONLY.narrowPeak
+  - - genome: /projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/MacaqueGenome/rheMac8.fa
+      intervals: /home/azstephe/liverRegression/regression_liver/data/splits/val1/macaque_liver_VAL.narrowPeak
+  - - genome: /projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/MacaqueGenome/rheMac8.fa
+      intervals: /home/azstephe/liverRegression/regression_liver/data/splits/log_val2/macaque_liver_VAL.narrowPeak
+  - - genome: /projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/MacaqueGenome/rheMac8.fa
+      intervals: /home/azstephe/liverRegression/regression_liver/data/splits/log_val3/macaque_liver_VAL.narrowPeak
+  - - genome: /projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/RatGenome/rn6.fa
+      intervals: /home/azstephe/liverRegression/regression_liver/data/splits/val1/rat_liver_VAL.narrowPeak
+  - - genome: /projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/RatGenome/rn6.fa
+      intervals: /home/azstephe/liverRegression/regression_liver/data/splits/log_val2/rat_liver_VAL.narrowPeak
+  - - genome: /projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/RatGenome/rn6.fa
+      intervals: /home/azstephe/liverRegression/regression_liver/data/splits/log_val3/rat_liver_VAL.narrowPeak
+  - - genome: /home/azstephe/regression_liver/data/splits/cowMouse/GCF_000003205.7_Btau_5.0.1_genomic_chromName.fna
+      intervals: /home/azstephe/liverRegression/regression_liver/data/splits/val1/cow_liver_VAL.narrowPeak
+  - - genome: /home/azstephe/regression_liver/data/splits/cowMouse/GCF_000003205.7_Btau_5.0.1_genomic_chromName.fna
+      intervals: /home/azstephe/liverRegression/regression_liver/data/splits/log_val2/cow_liver_VAL.narrowPeak
+  - - genome: /home/azstephe/regression_liver/data/splits/cowMouse/GCF_000003205.7_Btau_5.0.1_genomic_chromName.fna
+      intervals: /home/azstephe/liverRegression/regression_liver/data/splits/log_val3/cow_liver_VAL.narrowPeak
+  - - genome: /data/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/200MammalsFastas/susScr3.fa
+      intervals: /home/azstephe/liverRegression/regression_liver/data/splits/val1/pig_liver_VAL.narrowPeak
+  - - genome: /data/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/200MammalsFastas/susScr3.fa
+      intervals: /home/azstephe/liverRegression/regression_liver/data/splits/log_val2/pig_liver_VAL.narrowPeak
+  - - genome: /data/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/200MammalsFastas/susScr3.fa
+      intervals: /home/azstephe/liverRegression/regression_liver/data/splits/log_val3/pig_liver_VAL.narrowPeak
+additional_val_targets:
+  desc: null
+  value:
+  - - 0
+  - - column: 4
+  - - column: 4
+  - - 0
+  - - column: 4
+  - - column: 4
+  - - 0
+  - - column: 4
+  - - column: 4
+  - - 0
+  - - column: 4
+  - - column: 4
+  - - 0
+  - - column: 4
+  - - column: 4
+batch_size:
+  desc: null
+  value: 100
+bias_initializer:
+  desc: null
+  value:
+    identifier: zeros
+class_weight:
+  desc: null
+  value: none
+clr_tail_epochs:
+  desc: null
+  value: 5
+conv_filters:
+  desc: null
+  value: 200
+conv_stride:
+  desc: null
+  value: 1
+conv_width:
+  desc: null
+  value: 7
+dense_filters:
+  desc: null
+  value: 250
+dir:
+  desc: null
+  value: none
+dropout_rate_conv:
+  desc: null
+  value: 0.55
+dropout_rate_dense:
+  desc: null
+  value: 0.2
+early_stopping_callbacks:
+  desc: null
+  value:
+  - mode: min
+    monitor: val_loss
+    patience: 4
+    verbose: 1
+entity:
+  desc: null
+  value: cmu-cbd-pfenninglab
+interp_model_path:
+  desc: null
+  value: /home/csestili/models/model-5layer.h5
+kernel_initializer:
+  desc: null
+  value:
+    identifier: glorot_uniform
+l2_reg_conv:
+  desc: null
+  value: 0.0001
+l2_reg_dense:
+  desc: null
+  value: 0.0001
+l2_reg_final:
+  desc: null
+  value: 0.0001
+loss_function:
+  desc: null
+  value: mean_squared_error
+lr_cyc_num_cycles:
+  desc: null
+  value: 1.0
+lr_cyc_scale_fn:
+  desc: null
+  value: triangular2
+lr_exp_decay_per_epoch:
+  desc: null
+  value: 0.99
+lr_init:
+  desc: null
+  value: 0.0006144593436007898
+lr_max:
+  desc: null
+  value: 0.1
+lr_schedule:
+  desc: null
+  value: exponential
+max_pool_size:
+  desc: null
+  value: 26
+max_pool_stride:
+  desc: null
+  value: 26
+metric_pos_label:
+  desc: null
+  value: 1
+model_checkpoint:
+  desc: null
+  value: none
+modisco_normalization:
+  desc: null
+  value: gkm_explain
+momentum_base:
+  desc: null
+  value: 0.85
+momentum_max:
+  desc: null
+  value: 0.99
+momentum_schedule:
+  desc: null
+  value: constant
+name:
+  desc: null
+  value: none
+num_conv_layers:
+  desc: null
+  value: 6
+num_dense_layers:
+  desc: null
+  value: 2
+num_epochs:
+  desc: null
+  value: 50
+optimizer:
+  desc: null
+  value: adam
+optimizer_args:
+  desc: null
+  value:
+    beta_1: 0.9
+    beta_2: 0.999
+project:
+  desc: null
+  value: liverRegression
+shap_num_bg:
+  desc: null
+  value: 20
+shap_num_fg:
+  desc: null
+  value: 5
+shap_pos_label:
+  desc: null
+  value: 1
+targets_are_classes:
+  desc: null
+  value: false
+train_data_paths:
+  desc: null
+  value:
+  - genome: /projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/MouseGenome/mm10.fa
+    intervals: /home/azstephe/liverRegression/regression_liver/data/splits/logPos/mouse_liver_TRAINONLY.narrowPeak
+  - genome: /projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/MouseGenome/mm10.fa
+    intervals: /home/azstephe/regression_liver/data/splits/negatives/nonMouse_liver_andRat_andCow_andPig_andMacaque_TRAIN_500bp.bed
+train_targets:
+  desc: null
+  value:
+  - column: 4
+  - 0
+use_exact_val_metrics:
+  desc: null
+  value: true
+use_reverse_complement:
+  desc: null
+  value: true
+val_data_paths:
+  desc: null
+  value:
+  - genome: /projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/MouseGenome/mm10.fa
+    intervals: /home/azstephe/liverRegression/regression_liver/data/splits/logPos/mouse_liver_VAL.narrowPeak
+  - genome: /projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/MouseGenome/mm10.fa
+    intervals: /home/azstephe/regression_liver/data/splits/negatives/nonMouse_liver_andRat_andCow_andPig_andMacaque_VAL_500bp.bed
+val_targets:
+  desc: null
+  value:
+  - column: 4
+  - 0
