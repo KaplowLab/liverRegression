@@ -3,6 +3,8 @@ This repository contains the codebase and data processing pipelines used for the
 
 The project focuses on using regression models to predict species-specific open chromatin regions, utilizing specialized normalization techniques to handle cross-species signal variation.
 
+Note on Usage: Most scripts use project-specific naming conventions and data structures. While they serve as documented templates for the analysis methodology, they will require adaptation to work with external datasets.
+
 ## Key Features
 Quantile Normalization (quantile_normalize.py): Standardizes signal distributions across species for fixed-size peak sets.
 
@@ -44,7 +46,6 @@ An example run output is provided in: `examples/run-20250225_222915-bdbi7l3n`
 Positive and Negative sets for Training, Validation, and Testing.
 Subsets: Val 1, 2, 3 and Test 1, 2, 3.
 
-Note on Usage: These scripts use project-specific naming conventions and data structures. While they serve as documented templates for the analysis methodology, they will require adaptation to work with external datasets.
 ```
 bash get_activations.sh run-20250225_222915-bdbi7l3n
 ```
@@ -53,8 +54,6 @@ Output Directory: ~/data/model_outputs/${ID}_FINAL
 ## Model Evaluations
 
 Examples for correlating model predictions with observed signal values are available in the provided Python notebooks.
-
-Note on Usage: These scripts use project-specific naming conventions and data structures. While they serve as documented templates for the analysis methodology, they will require adaptation to work with external datasets.
 
 `scripts/foldchange_eval.ipynb`
 `scripts/prediction_eval.ipynb`
