@@ -18,7 +18,7 @@ sbatch -p pfen1 -w compute-1-11 -o ~/rat_mouse.o \
   -s Rattus_norvegicus \
   -t Mus_musculus \
   -o /scratch/azstephe/liver/ratToMouse/ \
-  -b /home/azstephe/liverRegression/regression_liver/data/raw/rat_liver_pos_ALL.narrowPeak \
+  -b /home/azstephe/liverRegression/regression_liver/data/processed/rat_liver_pos_ALL.narrowPeak \
   --halPath /home/ikaplow/RegulatoryElementEvolutionProject/src/hal/bin/halLiftover
 ```
 
@@ -62,7 +62,7 @@ Use bedtools intersect with specific flags to preserve the metadata from both sp
 # -wb: Write the original entry from file B (Mouse peak)
 bedtools intersect -wa -wb \
   -a /home/azstephe/liverRegression/regression_liver/data/mapped/ratToMouse_liver_ratEnhancer_TEST.narrowPeak \
-  -b /home/azstephe/regression_liver/data/raw/mouse_liver_pos_ALL.narrowPeak \
+  -b /home/azstephe/regression_liver/data/processed/mouse_liver_pos_ALL.narrowPeak \
   > /home/azstephe/liverRegression/regression_liver/data/mapped/ratToMouse_liver_ratEnhancer_mouseEnhancer_wawb.narrowPeak
 ```
 
