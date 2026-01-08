@@ -7,8 +7,6 @@ The same pipeline is applied to generate training and validation sets; simply mo
 ## 1. Cross-Species Peak Mapping (Liftover)
 Using `HALPER`, we map rat peak coordinates to the mouse genome. This allows us to identify orthologous regions across the two species.
 
-
-
 ```bash
 # Map all rat peaks to mouse using HALPER via SLURM
 sbatch -p pfen1 -w compute-1-11 -o ~/rat_mouse.o \
@@ -25,9 +23,9 @@ Primary output: `rat_liver_pos_ALL.Rattus_norvegicusToMus_musculus.HALPER.narrow
 Column 3: Mouse coordinates of the mapped rat peak.
 Column 4: Original Rat peak name.
 
-## 2. Identify Postive Test Peak Set (Mouse Chromosomes 1 & 2)
-To ensure a robust evaluation and avoid training bias, we reserve orthologs of mouse chr1 and chr2 as our test set.
-
+## 2. Create Test Set
+We reserve rat regions that are orthologs of mouse chr1 and chr2 as our test set.
+### Identify Postive Test Peak Set
 ```bash
 # Extract peaks mapped to mouse chr1 and chr2
 zcat /home/azstephe/liverRegression/regression_liver/data/mapped/rat_liver_pos_ALL.Rattus_norvegicusToMus_musculus.HALPER.narrowPeak.gz \
@@ -35,8 +33,8 @@ zcat /home/azstephe/liverRegression/regression_liver/data/mapped/rat_liver_pos_A
   > /home/azstephe/liverRegression/regression_liver/data/mapped/ratToMouse_liver_ratEnhancer_TEST.narrowPeak
 ```
 
-## 3. Filter Positive Test Set
-We filter the Test peak set against our log-signal file to get a file with the OCR coordinates and respective logged signal values.
+### Filter Positive Test Set
+Filter the Test peak set against our log-signal file to get a file with the OCR coordinates and respective logged signal values.
 ```bash
 # Filter test set peaks using the log signal values file
 python ~/liverRegression/repos/OCROrthologPrediction/src/filterPeakName.py \
@@ -46,8 +44,39 @@ python ~/liverRegression/repos/OCROrthologPrediction/src/filterPeakName.py \
   --outputFileName /home/azstephe/liverRegression/regression_liver/data/test_splits/log_pos/rat_liver_TEST_500bp.bed
 ```
 
-## 4. Identify Test 3 Peak Set
-We identify regions that are accessible in Rat but not in Mouse. This is achieved by subtracting all reproducible and non-reproducible mouse peaks from our mapped rat peaks.
+Primary output used in training: `/home/azstephe/liverRegression/regression_liver/data/test_splits/log_pos/rat_liver_TEST_500bp.bed`
+
+## 3. Create Test Set 2
+We identify regions that are accessible in both Rat and Mouse. 
+### Identify Test 2 Peak Set
+Use bedtools intersect with specific flags to preserve the metadata from both species.
+```bash
+# Intersect mapped rat peaks with existing mouse peaks
+# -wa: Write the original entry from file A (Rat mapped to Mouse)
+# -wb: Write the original entry from file B (Mouse peak)
+bedtools intersect -wa -wb \
+  -a /home/azstephe/liverRegression/regression_liver/data/mapped/ratToMouse_liver_ratEnhancer_TEST.narrowPeak \
+  -b /home/azstephe/regression_liver/data/raw/mouse_liver_pos_ALL.narrowPeak \
+  > /home/azstephe/liverRegression/regression_liver/data/mapped/ratToMouse_liver_ratEnhancer_mouseEnhancer_wawb.narrowPeak
+```
+
+### Filter Test 2 Set
+Filter the Test 2 peak set against our log-signal file to get a file with the OCR coordinates and respective logged signal values.
+```bash
+# Filter the conserved test set against the log signal values file
+python ~/liverRegression/repos/OCROrthologPrediction/src/filterPeakName.py \
+  --unfilteredPeakFileName /home/azstephe/liverRegression/regression_liver/data/log/rat_liver_pos_ALL.bed \
+  --peakListFileName /home/azstephe/liverRegression/regression_liver/data/mapped/ratToMouse_liver_ratEnhancer_mouseEnhancer_wawb.narrowPeak \
+  --peakNameCol 3 \
+  --outputFileName /home/azstephe/liverRegression/regression_liver/data/test_splits/log_test2/rat_liver_TEST_500bp.bed
+```
+
+Primary output used in training: `/home/azstephe/liverRegression/regression_liver/data/test_splits/log_test2/rat_liver_TEST_500bp.bed`
+
+## 4. Create Test Set 3
+We identify regions that are accessible in Rat but not in Mouse.
+### Identify Test 3 Peak Set
+Subtract all reproducible and non-reproducible mouse peaks from our mapped rat peaks.
 ```bash
 # Subtract mouse peaks from mapped rat peaks
 # -A ensures that any overlap results in the removal of the entire rat peak
@@ -57,8 +86,8 @@ bedtools subtract -A \
   > /home/azstephe/liverRegression/regression_liver/data/mapped/ratToMouse_liver_ratEnhancer_mouseNon_TEST3.narrowPeak
 ```
 
-## 5. Filter Test 3 Set
-We filter the Test 3 peak set against our log-signal file to get a file with the OCR coordinates and respective logged signal values.
+### Filter Test 3 Set
+Filter the Test 3 peak set against our log-signal file to get a file with the OCR coordinates and respective logged signal values.
 ```bash
 # Filter test 3 set peaks using the log signal values file
 python ~/liverRegression/repos/OCROrthologPrediction/src/filterPeakName.py \
@@ -67,3 +96,6 @@ python ~/liverRegression/repos/OCROrthologPrediction/src/filterPeakName.py \
   --peakNameCol 3 \
   --outputFileName /home/azstephe/liverRegression/regression_liver/data/test_splits/log_test3/rat_liver_TEST_500bp.bed
 ```
+
+Primary output used in training: `/home/azstephe/liverRegression/regression_liver/data/test_splits/log_test3/rat_liver_TEST_500bp.bed`
+
