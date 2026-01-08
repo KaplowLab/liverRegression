@@ -1,9 +1,25 @@
 # Workflow: Generation of Negative Evaluation Sets for Cross-Species OCR Prediction
-This documentation outlines the bioinformatic pipeline used to create the negative (non-enhancer) evaluation sets. This process identifies the rat regions that are inaccessible, whose mouse orthologs are accessible.
-The same pipeline is applied to generate training and validation sets; simply modify the chromosomal partitions in Step 3 accordingly.
 
-## 1. Cross-Species Peak Mapping (Mouse to Rat Liftover)
-We use HALPER to map Mouse peak coordinates to the Rat genome. This identifies the orthologous genomic locations in Rat for all known Mouse OCRs.
+This documentation outlines the bioinformatics pipeline used to generate the negative evaluation sets from ATAC-seq data. 
+
+In this example, Mouse (*Mus musculus*) serves as the training species, while Rat (*Rattus norvegicus*) serves as the evaluation species.
+
+Below is the step-by-step implementation for generating the negative evaluation partitions: Neg Test and Test 1.
+
+The same pipeline is applied to generate training and validation sets; simply modify the chromosomal partitions in the filtering of Step 2 accordingly.
+
+
+/projects/pfenninggroup/machineLearningForComputationalBiology/regElEvoGrant/MouseDNase/LiverPfenning_ATAC_out/atac/68eb27d1-23c7-4d42-80f9-b3dd46f5e18c/call-reproducibility_idr/execution/idr.optimal_peak.inLiuAllLoose_nonCDS_enhancerShort_rheMac8Fixed_summitExtendedMin50Max2XProtect5_UCSCNames_nonMacaqueLiver_test_andRat_andCow_andPig.bed
+
+## Create Negative Test Set
+
+
+
+
+
+
+## 1. Cross-Species Peak Mapping (Liftover)
+Using `HALPER`, we map Mouse peak coordinates to the Rat genome. This identifies the orthologous genomic regions in Rat for all known Mouse OCRs.
 ```bash
 # Map all mouse peaks to rat using HALPER via SLURM
 sbatch -p pfen1 -w compute-1-11 -o ~/mouse_rat.o \
