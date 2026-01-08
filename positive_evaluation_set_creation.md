@@ -1,6 +1,10 @@
-# Workflow: Generation of Evaluation Sets for Cross-Species OCR Prediction
+# Workflow: Generation of Positive Evaluation Sets for Cross-Species OCR Prediction
 
-This documentation outlines the bioinformatic pipeline used to create evaluation sets from ATAC-SEQ data. The example workflow maps Open Chromatin Region (OCR) peaks from **Rat** (*Rattus norvegicus*) to **Mouse** (*Mus musculus*) and generates the Test, Test 1, Test 2, and Test 3 sets.
+This documentation outlines the bioinformatics pipeline used to generate positive evaluation sets from ATAC-seq data. 
+
+In this example, Mouse (*Mus musculus*) serves as the training species, while Rat (*Rattus norvegicus*) serves as the evaluation species.
+
+Below is the step-by-step implementation for generating the positive evaluation partitions: Test, Test 2, and Test 3.
 
 The same pipeline is applied to generate training and validation sets; simply modify the chromosomal partitions in Step 2 accordingly.
 
@@ -32,6 +36,8 @@ zcat /home/azstephe/liverRegression/regression_liver/data/mapped/rat_liver_pos_A
   | grep -E '^(chr1[[:space:]]|chr2[[:space:]])' \
   > /home/azstephe/liverRegression/regression_liver/data/mapped/ratToMouse_liver_ratEnhancer_TEST.narrowPeak
 ```
+
+Note: change the `grep` command to `grep -E '^(chr8[[:space:]]|chr9[[:space:]])'` to generate validation set.
 
 ### Filter Positive Test Set
 Filter the Test peak set against our log-signal file to get a file with the OCR coordinates and respective logged signal values.
