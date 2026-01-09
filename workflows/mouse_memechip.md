@@ -1,4 +1,4 @@
-# Motif Discovery (MEME-ChIP)
+# Motif Enrichment (MEME-ChIP)
 [MEME Suite](https://meme-suite.org/meme/) was used to do motif discovery.
 
 This section provides example code as a template.
