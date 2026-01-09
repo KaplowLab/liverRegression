@@ -63,7 +63,7 @@ Subsets: Val 1, 2, 3 and Test 1, 2, 3.
 ```
 bash get_activations.sh run-20250225_222915-bdbi7l3n
 ```
-Output Directory: ~/data/model_outputs/${ID}_FINAL
+Output Directory: `~/data/model_outputs/${ID}_FINAL` where `${ID}=bdbi7l3n`
 
 ## Model Evaluations
 
