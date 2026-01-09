@@ -28,13 +28,13 @@ A number of public tools were used in this work. They are linked below.
 
 [cnn_pipeline](https://github.com/pfenninglab/cnn_pipeline)
 
-[MEME-ChIP](https://meme-suite.org/meme/tools/meme-chip)
+[MEME-Suite](https://meme-suite.org/meme/tools)
 
 ## Data Preprocessing
 Detailed documentation on data generation can be found in the `workflows/` directory. This includes the step-by-step logic for log, QN, EQN-transformation, summit-centering, and base-pair expansion (500bp/2000bp).
 
 ### Data Split Organization
-Processed data is organized into Train, Validation, and Test splits. Below is an example summary of the directory structure within ~/data/:
+Processed data is organized into Train, Validation, and Test splits. Below is an example summary of the directory structure within `$PROJECT_DIR/data/`:
 
 | Split Type | Subset | Description |
 | :--- | :--- | :--- |
@@ -43,7 +43,7 @@ Processed data is organized into Train, Validation, and Test splits. Below is an
 | **Test** | `test_splits/` | Includes `neg`, `log_pos`, and subsets (`test1`, `log_test2`, `log_test3`). |
 
 ## Training Regression Models
-The Pfenning Lab CNN Pipeline was used for model training. 
+The [Pfenning Lab CNN Pipeline](https://github.com/pfenninglab/cnn_pipeline) was used for model training. 
 
 Example configuration and hyperparameter sweep files are located in the `examples/` directory.
 
@@ -56,9 +56,30 @@ bash train.sh examples/config.yaml
 bash start_sweep.sh examples/sweep-config.yaml
 bash start_agents.sh 100 4 <sweep_id>
 ```
-Models and logs are saved to: `~/repos/cnn_pipeline/wandb/`
+Models and logs are saved to: `$PROJECT_DIR/repos/cnn_pipeline/wandb/`
 
-An example run output is provided in: `examples/run-20250225_222915-bdbi7l3n`
+An example run output follows the following file structure:
+```
+run-20250225_222915-bdbi7l3n
+├── files
+│   ├── conda-environment.yaml
+│   ├── config.yaml
+│   ├── media
+│   │   └── graph
+│   │       └── graph_summary_c62f178e911f2edbadcc.graph.json
+│   ├── model-best.h5
+│   ├── model-latest.h5
+│   ├── output.log
+│   ├── requirements.txt
+│   ├── wandb-metadata.json
+│   └── wandb-summary.json
+├── logs
+│   ├── debug-internal.log
+│   └── debug.log
+├── run-bdbi7l3n.wandb
+└── tmp
+    └── code
+```
 
 ## Model Activations
 `scripts/get_activations.sh` automates the extraction of model predictions for all datasets. This script automatically submits sbatch jobs to the cluster and uses a GPU. Gets activations for the following set: 
@@ -69,17 +90,17 @@ Subsets: Val 1, 2, 3 and Test 1, 2, 3.
 ```
 bash get_activations.sh run-20250225_222915-bdbi7l3n
 ```
-Output Directory: `~/data/model_outputs/${ID}_FINAL` where `${ID}=bdbi7l3n`
+Output Directory: `$PROJECT_DIR/data/model_outputs/${ID}_FINAL` where `$ID=bdbi7l3n`
 
 ## Model Evaluations
 
 Examples for correlating model predictions with observed signal values are available in the provided Python notebooks.
 
-`scripts/foldchange_eval.ipynb`
-`scripts/prediction_eval.ipynb`
+`notebooks/foldchange_eval.ipynb`
+`notebooks/prediction_eval.ipynb`
 
 ## Motif Enrichment Analysis
-Motif Enrichment was conducted using MEME-ChIP. 
+Motif Enrichment was conducted using [MEME-ChIP](https://meme-suite.org/meme/tools/meme-chip). 
 
 Example code is provided in `workflow/mouse_memechip.md`.
 
