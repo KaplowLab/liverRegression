@@ -10,6 +10,15 @@ Quantile Normalization (quantile_normalize.py): Standardizes signal distribution
 
 Extended Quantile Normalization (EQN.py): A robust normalization strategy that handles varying peak counts across different species.
 
+## External Tools
+
+A number of public tools were used in these pipeline. They are linked below.
+
+[atac_data_pipeline](https://github.com/pfenninglab/atac_data_pipeline)
+[halLiftover-postprocessing](https://github.com/pfenninglab/halLiftover-postprocessing)
+[cnn_pipeline](https://github.com/pfenninglab/cnn_pipeline)
+[MEME-ChIP](https://meme-suite.org/meme/tools/meme-chip)
+
 ## Data Preprocessing
 Detailed documentation on data generation can be found in the `workflows/` directory. This includes the step-by-step logic for log, QN, EQN-transformation, summit-centering, and base-pair expansion (500bp/2000bp).
 
@@ -23,7 +32,7 @@ Processed data is organized into Train, Validation, and Test splits. Below is an
 | **Test** | `test_splits/` | Includes `neg`, `log_pos`, and subsets (`test1`, `log_test2`, `log_test3`). |
 
 ## Training Regression Models
-[Pfenning Lab CNN Pipeline](https://github.com/pfenninglab/cnn_pipeline) was used for model training. 
+The Pfenning Lab CNN Pipeline was used for model training. 
 
 Example configuration and hyperparameter sweep files are located in the `examples/` directory.
 
@@ -59,7 +68,7 @@ Examples for correlating model predictions with observed signal values are avail
 `scripts/prediction_eval.ipynb`
 
 ## Motif Enrichment Analysis
-Motif Enrichment was conducted using [MEME-ChIP](https://meme-suite.org/meme/tools/meme-chip). 
+Motif Enrichment was conducted using MEME-ChIP. 
 
 Example code is provided in `workflow/mouse_memechip.md`.
 
