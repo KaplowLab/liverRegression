@@ -15,20 +15,20 @@ The creation of the negative test set is described in [Kaplow et al.](https://ww
 Using the `halLiftover-postprocessing` repository, map mouse peak coordinates to the rat genome. Do this for all non-rat species (in our case: mouse, macaque, cow, and pig)
 ```bash
 # Map all mouse peaks to rat using HALPER via SLURM
-sbatch -p [partition] -w [node] -o ~PROJECT_DIR/mouseToRat.o \
+sbatch -p [partition] -w [node] -o $PROJECT_DIR/mouseToRat.o \
   $PROJECT_DIR/repos/halLiftover-postprocessing/halper_map_peak_orthologs.sh \
   -s Mus_musculus \
   -t Rattus_norvegicus \
   -o $PROJECT_DIR/data/mouseToRat/ \
   -b $PROJECT_DIR/data/candidate_enhancers/mouse_liver_pos_ALL.narrowPeak
 ```
-Primary output: $PROJECT_DIR/data/mouseToRat/mouse_liver_pos_ALL.Mus_musculusToRattus_norvegicus.HALPER.narrowPeak.gz
+Primary output: `$PROJECT_DIR/data/mouseToRat/mouse_liver_pos_ALL.Mus_musculusToRattus_norvegicus.HALPER.narrowPeak.gz`
 
 ### 2. Remove those that overlap with rat OCRs (both reproducible and nonreproducible)
 ### 3. Union the resulting regions
 ### 4. Split according to the train-val-test split
 
-Primary output used in training: $PROJECT_DIR/data/test_splits/neg/rat_liver_TEST_500bp.bed
+Primary output used in training: `$PROJECT_DIR/data/test_splits/neg/rat_liver_TEST_500bp.bed`
 
 ## Create Test Set 1
 Regions that are accessible in mouse but are not accessible in rat.
@@ -65,4 +65,4 @@ python $PROJECT_DIR/repos/atac_data_pipeline/scripts/preprocessing.py expand_pea
   -i $PROJECT_DIR/data/test_splits/log_test1/rat_liver_TEST.narrowPeak \
   -o $PROJECT_DIR/data/test_splits/log_test1/rat_liver_TEST_500bp.bed
 ```
-Primary output used in training: $PROJECT_DIR/data/test_splits/log_test1/rat_liver_TEST_500bp.bed
+Primary output used in training: `$PROJECT_DIR/data/test_splits/log_test1/rat_liver_TEST_500bp.bed`
