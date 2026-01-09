@@ -1,6 +1,10 @@
 # LiverRegression
 This repository contains the codebase and data processing pipelines used for the project: "Challenges in Predicting Chromatin Accessibility Differences between Species."
 
+Stephen, A., Raje, A., Sestili, H. H., Wirthlin, M. E., Lawler, A. J., Brown, A. R., Stauffer, W. R., Pfenning, A. R., & Kaplow, I. M. bioRxiv 2025; doi: https://doi.org/10.1101/2025.11.09.687449
+
+https://www.biorxiv.org/content/10.1101/2025.11.09.687449v1
+
 The project focuses on using regression models to predict species-specific open chromatin regions, utilizing specialized normalization techniques to handle cross-species signal variation.
 
 Note on Usage: Most scripts use project-specific naming conventions and data structures. While they serve as documented templates for the analysis methodology, they will require adaptation to work with external datasets.
