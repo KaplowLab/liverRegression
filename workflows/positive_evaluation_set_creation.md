@@ -10,6 +10,7 @@ The same pipeline is applied to generate training and validation sets; simply mo
 
 ## 1. Cross-Species Peak Mapping (Liftover)
 Using `HALPER`, we map rat peak coordinates to the mouse genome. This allows us to identify orthologous regions across the two species.
+Remember to first `conda activate hal`
 
 ```bash
 # Map all rat peaks to mouse using HALPER via SLURM
