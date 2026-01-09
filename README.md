@@ -42,7 +42,7 @@ Processed data is organized into Train, Validation, and Test splits. Below is an
 | **Validation** | `val_splits/` | Includes `neg`, `log_pos`, and subsets (`val1`, `log_val2`, `log_val3`). |
 | **Test** | `test_splits/` | Includes `neg`, `log_pos`, and subsets (`test1`, `log_test2`, `log_test3`). |
 
-Note that negative sets (neg/val1/test1) do not undergo signal transformations as their values are assumed to be zero. val2 and val3 directories are categorized by their specific normalization techniques.
+Note that negative sets (neg, val1, test1) do not undergo signal transformations as their values are assumed to be zero. val2 and val3 directories are categorized by their specific normalization techniques (e.g. log_val2, qn_val2, eqn_val3).
 
 ## Training Regression Models
 The [Pfenning Lab CNN Pipeline](https://github.com/pfenninglab/cnn_pipeline) was used for model training. 
