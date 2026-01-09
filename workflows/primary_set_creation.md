@@ -28,7 +28,7 @@ This step applies a $log(x+1)$ transformation to the signal values (Column 7 in 
 # Example: Logging signal values
 python scripts/log_transform.py $PROJECT_DIR/data/candidate_enhancers/mouse_liver_pos_ALL.narrowPeak 
 ```
-Output: $PROJECT_DIR/data/log_transformed/mouse_liver_pos_ALL.narrowPeak
+Output: `$PROJECT_DIR/data/log_transformed/mouse_liver_pos_ALL.narrowPeak`
 
 ### 2. Quantile Normalization (QN)
 To perform standard Quantile Normalization, all input files must have the same number of peaks. Various straetegies to downsample larger datasets to match the species with the smallest peak count include random, distribution matched random, and keeping the strongest signals. 
@@ -62,7 +62,7 @@ Output Directory: `$PROJECT_DIR/data/extended_quantile_normalized/`
 Once signals are normalized, the OCR lengths must be standardized for model input.
 
 ### Base Pair Extension and Formatting
-Center each peak on its summit and expand it to a uniform width using the Pfenning Lab atac_data_pipeline. The lengths 500bp and 2000bp were used in the paper. Do this for all species.
+Using the `atac_data_pipeline` repository, center each peak on its summit and expand it to a uniform width. The lengths 500bp and 2000bp were used in the paper. Do this for all species.
 
 ``` bash
 # 1. Summit center and expand to 500bp
