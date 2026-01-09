@@ -12,7 +12,7 @@ Extended Quantile Normalization (EQN.py): A robust normalization strategy that h
 
 ## External Tools
 
-A number of public tools were used in these pipeline. They are linked below.
+A number of public tools were used in this work. They are linked below.
 
 [atac_data_pipeline](https://github.com/pfenninglab/atac_data_pipeline)
 
