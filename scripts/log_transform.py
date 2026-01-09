@@ -28,18 +28,18 @@ def log_transform_bed(file_path, output_path):
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Usage: python script.py <input_file>")
-        sys.exit(1)
+    else:
 
-    input_file = sys.argv[1]
+    	input_file = sys.argv[1]
     
-    # Construct output path: places the file in a /log/ subfolder within the same directory
-    # Example: data/peaks.bed -> data/log/peaks.bed
-    dir_name = os.path.dirname(input_file)
-    file_name = os.path.basename(input_file)
-    log_dir = os.path.join(dir_name, "log_transformed")
+    	# Construct output path: places the file in a /log/ subfolder within the same directory
+    	# Example: data/peaks.bed -> data/log/peaks.bed
+    	dir_name = os.path.dirname(input_file)
+    	file_name = os.path.basename(input_file)
+    	log_dir = os.path.join(dir_name, "log_transformed")
 
-    os.makedirs(log_dir, exist_ok=True)
-    output_file = os.path.join(log_dir, file_name)
+    	os.makedirs(log_dir, exist_ok=True)
+    	output_file = os.path.join(log_dir, file_name)
 
-    # Run the transformation
-    log_transform_bed(input_file, output_file)
+    	# Run the transformation
+    	log_transform_bed(input_file, output_file)

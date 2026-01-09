@@ -1,12 +1,9 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 """
 Quantile normalizes input files
 
 This script takes multiple space separated bed or narrowPeak file name paths. Assumes the files are the same length. Change the value of i in the load_bed_file function to denote the column containing the signal value (5 for BED file; 7 for narrowPeak file).
 
-Saves quantile normalized output files in "quantile_norm" subdirectory
+Saves quantile normalized output files in "quantile_normalized" subdirectory
 
 Quantile normalizes with no ties for rank.
 """
@@ -78,7 +75,7 @@ def new_path_dir(file_paths):
 
         parent_dir = path_obj.parent
         
-        new_dir = Path(*parent_dir.parts, 'quantile_norm')
+        new_dir = Path(*parent_dir.parts, 'quantile_normalized')
         updated_path = new_dir / path_obj.name
         
         new_dir.mkdir(parents=True, exist_ok=True)

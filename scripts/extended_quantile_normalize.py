@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 """
 Processes BED files using Extended Quantile Normalization (EQN) Algorithm.
 
@@ -13,7 +10,7 @@ subdirectories).
 It splits the peaks into an "included" and "excluded" set. For each peak
 in the excluded set, it finds the closest peak value from the included set and
 assigns its quantile-normalized signal value. The final, combined data
-is saved to a 'eqn' subdirectory.
+is saved to an 'extended_quantile_normalized' subdirectory.
 """
 
 import pandas as pd
