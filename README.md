@@ -77,6 +77,8 @@ Motif Enrichment was conducted using MEME-ChIP.
 
 Example code is provided in `workflow/mouse_memechip.md`.
 
+The Motif Enrichment results can be found [here](http://daphne.compbio.cs.cmu.edu/files/azstephe/liver_regression_resource/)
+
 ## Dependencies
 Dependencies are consistent with those of the Pfenning Lab [CNN Pipeline](https://github.com/pfenninglab/cnn_pipeline). 
 
