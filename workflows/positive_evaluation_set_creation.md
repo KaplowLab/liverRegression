@@ -15,13 +15,12 @@ Remember to first `conda activate hal`
 
 ```bash
 # Map all rat peaks to mouse using HALPER via SLURM
-sbatch -p pfen1 -w compute-1-11 -o $PROJECT_DIR/ratToMouse.o \
+sbatch -p [partition] -w [node] -o $PROJECT_DIR/ratToMouse.o \
   $PROJECT_DIR/repos/halLiftover-postprocessing/halper_map_peak_orthologs.sh \
   -s Rattus_norvegicus \
   -t Mus_musculus \
   -o $PROJECT_DIR/data/ratToMouse/ \
   -b $PROJECT_DIR/data/enhancer_candidates/rat_liver_pos_ALL.narrowPeak \
-  --halPath ~/src/hal/bin/halLiftover
 ```
 
 Primary output: `$PROJECT_DIR/data/ratToMouse/rat_liver_pos_ALL.Rattus_norvegicusToMus_musculus.HALPER.narrowPeak.gz`
@@ -45,7 +44,7 @@ Note: change the `grep` command to `grep -E '^(chr8[[:space:]]|chr9[[:space:]])'
 Filter the Test peak set against our log-signal file to get a file with the OCR coordinates and respective logged signal values.
 ```bash
 # Filter test set peaks using the log signal values file
-python ~/repos/OCROrthologPrediction/src/filterPeakName.py \
+python $PROJECT_DIR/OCROrthologPrediction/src/filterPeakName.py \
   --unfilteredPeakFileName $PROJECT_DIR/data/log_transformed/rat_liver_pos_ALL_500bp.bed \
   --peakListFileName $PROJECT_DIR/data/ratToMouse/ratToMouse_liver_ratEnhancer_TEST.narrowPeak \
   --peakNameCol 3 \
@@ -72,7 +71,7 @@ bedtools intersect -wa -wb \
 Filter the Test 2 peak set against our log-signal file to get a file with the OCR coordinates and respective logged signal values.
 ```bash
 # Filter the conserved test set against the log signal values file
-python ~/repos/OCROrthologPrediction/src/filterPeakName.py \
+python $PROJECT_DIR/repos/OCROrthologPrediction/src/filterPeakName.py \
   --unfilteredPeakFileName $PROJECT_DIR/data/log_transformed/rat_liver_pos_ALL_500bp.bed \
   --peakListFileName $PROJECT_DIR/data/ratToMouse/ratToMouse_liver_ratEnhancer_mouseEnhancer_wawb.narrowPeak \
   --peakNameCol 3 \
@@ -98,7 +97,7 @@ bedtools subtract -A \
 Filter the Test 3 peak set against our log-signal file to get a file with the OCR coordinates and respective logged signal values.
 ```bash
 # Filter test 3 set peaks using the log signal values file
-python ~/repos/OCROrthologPrediction/src/filterPeakName.py \
+python $PROJECT_DIR/repos/OCROrthologPrediction/src/filterPeakName.py \
   --unfilteredPeakFileName $PROJECT_DIR/data/log_transformed/rat_liver_pos_ALL_500bp.bed \
   --peakListFileName $PROJECT_DIR/data/ratToMouse/ratToMouse_liver_ratEnhancer_mouseNon_TEST3.narrowPeak \
   --peakNameCol 3 \
