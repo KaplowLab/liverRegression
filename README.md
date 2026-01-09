@@ -77,3 +77,13 @@ Motif Enrichment was conducted using MEME-ChIP.
 
 Example code is provided in `workflow/mouse_memechip.md`.
 
+## Dependencies
+Dependencies are consistent with those of the Pfenning Lab [CNN Pipeline](https://github.com/pfenninglab/cnn_pipeline). 
+
+## Contact
+
+Irene Kaplow (ikaplow@cs.cmu.edu)
+
+Andreas Pfenning (apfenning@cmu.edu)
+
+Amy Stephen (astephen@berkeley.edu)
