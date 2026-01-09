@@ -1,7 +1,4 @@
 #!/bin/bash
-#
-# Usage: bash setup.sh <cluster_name>, where <cluster_name> is "lane" or "bridges"
-
 # Check arguments
 
 if [ "$CONDA_DEFAULT_ENV" != "keras2-tf27" ]; then
