@@ -59,5 +59,7 @@ Examples for correlating model predictions with observed signal values are avail
 `scripts/prediction_eval.ipynb`
 
 ## Motif Enrichment Analysis
-Motif Enrichment was conducted using [MEME-ChIP](https://meme-suite.org/meme/tools/meme-chip). Example code is provided in `workflow/mouse_memechip.md'.
+Motif Enrichment was conducted using [MEME-ChIP](https://meme-suite.org/meme/tools/meme-chip). 
+
+Example code is provided in `workflow/mouse_memechip.md`.
 
