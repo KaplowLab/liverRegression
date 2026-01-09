@@ -36,7 +36,7 @@ bedtools getfasta -fi /~/data/MouseGenome/mm10.fa \
 ```
 
 #### Run MEME-ChIP
-Personal script provided in `scripts/memechip.sh`
+Custom sbatch script provided in `scripts/memechip.sh`
 ``` bash
 # Sbatch command for memechip on strong
 sbatch --mem=4G -o strong.o -J strong -p gpu -n 1 --gres gpu:1 ~/scripts/memechip.sh \
