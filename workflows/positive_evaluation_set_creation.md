@@ -10,6 +10,7 @@ The same pipeline is applied to generate training and validation sets; simply mo
 
 ## 1. Cross-Species Peak Mapping (Liftover)
 Using `HALPER`, map rat peak coordinates to the mouse genome. It is important to use the `$PROJECT_DIR/enhancer_candidates/` files before any summit-centering and peak expansion to correctly map enhancer candidate orthologs. The output files are very large and are often stored in a scratch directory which will be omitted for clarity.
+
 Remember to first `conda activate hal`
 
 ```bash
