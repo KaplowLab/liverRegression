@@ -14,7 +14,7 @@ Note on Usage: Most scripts use project-specific naming conventions and data str
 ## Key Features
 Quantile Normalization (quantile_normalize.py): Standardizes signal distributions across species for fixed-size peak sets.
 
-Extended Quantile Normalization (EQN.py): A robust normalization strategy that handles varying peak counts across different species.
+Extended Quantile Normalization (extended_quantile_normalize.py): A robust normalization strategy that handles varying peak counts across different species.
 
 ## External Tools
 
@@ -31,7 +31,7 @@ A number of public tools were used in this work. They are linked below.
 [MEME-Suite](https://meme-suite.org/meme/tools)
 
 ## Data Preprocessing
-Detailed documentation on data generation can be found in the `workflows/` directory. This includes the step-by-step logic for log, QN, EQN-transformation, summit-centering, and base-pair expansion (500bp/2000bp).
+Detailed documentation on data generation can be found in the `workflows/` directory. This includes the step-by-step logic for log transformation, quantile normalization, extended quantile normalization, summit-centering, and base-pair expansion (500bp/2000bp).
 
 ### Data Split Organization
 Processed data is organized into Train, Validation, and Test splits. Below is an example summary of the directory structure within `$PROJECT_DIR/data/`:
@@ -41,6 +41,8 @@ Processed data is organized into Train, Validation, and Test splits. Below is an
 | **Train** | `train_splits/` | Includes `neg` (negative sets) and `log_pos` (log-transformed positives). |
 | **Validation** | `val_splits/` | Includes `neg`, `log_pos`, and subsets (`val1`, `log_val2`, `log_val3`). |
 | **Test** | `test_splits/` | Includes `neg`, `log_pos`, and subsets (`test1`, `log_test2`, `log_test3`). |
+
+Note that negative sets (neg/val1/test1) do not undergo signal transformations as their values are assumed to be zero. val2 and val3 directories are categorized by their specific normalization techniques.
 
 ## Training Regression Models
 The [Pfenning Lab CNN Pipeline](https://github.com/pfenninglab/cnn_pipeline) was used for model training. 
@@ -58,7 +60,7 @@ bash start_agents.sh 100 4 <sweep_id>
 ```
 Models and logs are saved to: `$PROJECT_DIR/repos/cnn_pipeline/wandb/`
 
-An example run output follows the following file structure:
+A run output follows the following file structure:
 ```
 run-20250225_222915-bdbi7l3n
 ├── files
@@ -104,10 +106,25 @@ Motif Enrichment was conducted using [MEME-ChIP](https://meme-suite.org/meme/too
 
 Example code is provided in `workflow/mouse_memechip.md`.
 
-The Motif Enrichment results for the project can be found [here](http://daphne.compbio.cs.cmu.edu/files/azstephe/liver_regression_resource/)
+The Motif Enrichment results for the project can be found [here](http://daphne.compbio.cs.cmu.edu/files/azstephe/liver_regression_resource/).
 
 ## Dependencies
-Dependencies are consistent with those of the Pfenning Lab [CNN Pipeline](https://github.com/pfenninglab/cnn_pipeline). 
+Dependencies are consistent with those of the Pfenning Lab [CNN Pipeline](https://github.com/pfenninglab/cnn_pipeline).
+
+## Data Availability
+Processed datasets can be found [here](http://daphne.compbio.cs.cmu.edu/files/azstephe/liver_regression_resource/data) with the following file structure. Python notebooks serve as templates and must be adapted when applied to these datasets.
+
+```
+data
+├── candidate_enhancers
+├── extended_quantile_normalized
+├── log_transformed
+├── quantile_normalized
+├── rep_and_nonRep
+├── test_splits
+├── train_splits
+└── val_splits
+```
 
 ## Contact
 
