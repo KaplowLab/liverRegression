@@ -1,6 +1,5 @@
 # Motif Discovery (MEME-ChIP)
-Motif Discovery identifies recurring patterns in DNA which typically represent functional elements, such as Transcription Factor Binding Sites (TFBS).
-[MEME Suite](https://meme-suite.org/meme/) was used to do the analysis.
+[MEME Suite](https://meme-suite.org/meme/) was used to do motif discovery.
 
 This section provides example code as a template.
 
@@ -9,8 +8,6 @@ This section provides example code as a template.
 **Enrichment**: Running MEME-ChIP on the strongest mouse OCRs.
 
 **Differential**: Comparing the strongest peaks against a background of weak peaks.
-
-The section below provides both direct shell commands and SLURM (sbatch) script examples for cluster submission.
 
 #### Filter for only strong peaks with `OCROrthologPrediction`
 ``` bash
@@ -37,6 +34,8 @@ bedtools getfasta -fi /~/data/MouseGenome/mm10.fa \
 
 #### Run MEME-ChIP
 Custom sbatch script provided in `scripts/memechip.sh`
+
+Includes both direct shell commands and SLURM (sbatch) script examples for cluster submission.
 ``` bash
 # Sbatch command for memechip on strong
 sbatch --mem=4G -o strong.o -J strong -p gpu -n 1 --gres gpu:1 ~/scripts/memechip.sh \
