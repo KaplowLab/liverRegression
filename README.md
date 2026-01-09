@@ -15,8 +15,13 @@ Extended Quantile Normalization (EQN.py): A robust normalization strategy that h
 A number of public tools were used in these pipeline. They are linked below.
 
 [atac_data_pipeline](https://github.com/pfenninglab/atac_data_pipeline)
+
 [halLiftover-postprocessing](https://github.com/pfenninglab/halLiftover-postprocessing)
+
+[OCROrthologPrediction](https://github.com/pfenninglab/OCROrthologPrediction)
+
 [cnn_pipeline](https://github.com/pfenninglab/cnn_pipeline)
+
 [MEME-ChIP](https://meme-suite.org/meme/tools/meme-chip)
 
 ## Data Preprocessing
