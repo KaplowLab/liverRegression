@@ -58,4 +58,6 @@ Examples for correlating model predictions with observed signal values are avail
 `scripts/foldchange_eval.ipynb`
 `scripts/prediction_eval.ipynb`
 
-## Memechip Analysis
+## Motif Enrichment Analysis
+Motif Enrichment was conducted using [MEME-ChIP](https://meme-suite.org/meme/tools/meme-chip). Example code is provided in `workflow/mouse_memechip.md'.
+
