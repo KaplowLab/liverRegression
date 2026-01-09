@@ -9,7 +9,7 @@ Below is the step-by-step implementation for generating the positive test evalua
 The same pipeline is applied to generate training and validation sets; simply modify the chromosomal partitions in Step 2 accordingly.
 
 ## 1. Cross-Species Peak Mapping (Liftover)
-Using `HALPER`, map rat peak coordinates to the mouse genome. It is important to use the `enhancer_candidates` files before any summit-centering and peak expansion to correctly map enhancer candidate orthologs. The output files are very large and are often stored in a scratch directory which will be omitted for clarity.
+Using `HALPER`, map rat peak coordinates to the mouse genome. It is important to use the `$PROJECT_DIR/enhancer_candidates/` files before any summit-centering and peak expansion to correctly map enhancer candidate orthologs. The output files are very large and are often stored in a scratch directory which will be omitted for clarity.
 Remember to first `conda activate hal`
 
 ```bash
