@@ -12,7 +12,7 @@ fi
 PROJECT_DIR=$1
 RUN_DIR=$2
 
-# 2. Parsing Run Info
+# Parsing Run Info
 # Extracts 'run-20250225-bdbi7l3n' from the path
 RUN_NAME=$(basename "$RUN_DIR")
 # Extracts 'bdbi7l3n' (everything after the last hyphen)
@@ -42,9 +42,9 @@ submit_job() {
     echo "Submitting $label ($mode-way)..."
 
     if [ "$mode" -eq 2 ]; then
-        sbatch --mem=4G -o "$log_file" -J "$job_name" -p gpu -n 1 --gres gpu:1 "$script" "$MODEL" "$v1" "$v2" "$genome" "$OUTPUT_BASE" "$out_name"
+        sbatch --mem=4G -o "$log_file" -J "$job_name" -p gpu -n 1 --gres gpu:1 "$script" "$MODEL_PATH" "$v1" "$v2" "$genome" "$OUTPUT_BASE" "$out_name"
     else
-        sbatch --mem=4G -o "$log_file" -J "$job_name" -p gpu -n 1 --gres gpu:1 "$script" "$MODEL" "$v1" "$v2" "$v3" "$genome" "$OUTPUT_BASE" "$out_name"
+        sbatch --mem=4G -o "$log_file" -J "$job_name" -p gpu -n 1 --gres gpu:1 "$script" "$MODEL_PATH" "$v1" "$v2" "$v3" "$genome" "$OUTPUT_BASE" "$out_name"
     fi
 }
 
