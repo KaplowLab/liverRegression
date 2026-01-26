@@ -2,9 +2,6 @@
 
 # Change the -p [partition] in submit_job() helper function
 
-# Exit on error, undefined vars, or pipe failures
-set -euo pipefail
-
 # Usage
 if [ "$#" -ne 2 ]; then
     echo "Usage: bash get_activations.sh <PROJECT_DIR> <RUN_DIR>"
