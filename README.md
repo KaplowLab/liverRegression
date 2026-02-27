@@ -109,7 +109,7 @@ Example code is provided in `workflow/mouse_memechip.md`.
 The Motif Enrichment results for the project can be found [here](http://daphne.compbio.cs.cmu.edu/files/azstephe/liver_regression_resource/).
 
 ## Dependencies
-Conda environment YAML files for[HAL](https://github.com/ComparativeGenomicsToolkit/hal) and one for the [CNN Pipeline](https://github.com/pfenninglab/cnn_pipeline) are available in the `envs/` directory, though we recommend following the official repositories for the most up-to-date installation instructions.
+Conda environment YAML files for [HAL](https://github.com/ComparativeGenomicsToolkit/hal) and one for the [CNN Pipeline](https://github.com/pfenninglab/cnn_pipeline) are available in the `envs/` directory, though we recommend following the official repositories for the most up-to-date installation instructions.
 
 ## Data Availability
 Processed datasets can be found [here](http://daphne.compbio.cs.cmu.edu/files/azstephe/liver_regression_resource/data) with the following file structure. Python notebooks serve as templates and must be adapted when applied to these datasets.
