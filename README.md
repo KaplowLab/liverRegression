@@ -3,13 +3,13 @@ This repository contains the codebase and data processing pipelines used for the
 
 ### Challenges in Predicting Chromatin Accessibility Differences between Species
 
-Amy Stephen, Arian Raje, Heather H. Sestili, Morgan E. Wirthlin, Alyssa J. Lawler, Ashley R. Brown, William R. Stauffer, Andreas R. Pfenning, Irene M. Kaplow. bioRxiv 2025; doi: https://doi.org/10.1101/2025.11.09.687449
-
-https://www.biorxiv.org/content/10.1101/2025.11.09.687449v1
+Amy Stephen, Arian Raje, Heather H. Sestili, Morgan E. Wirthlin, Alyssa J. Lawler, Ashley R. Brown, William R. Stauffer, Andreas R. Pfenning, Irene M. Kaplow. bioRxiv 2025; [pre-print link](https://www.biorxiv.org/content/10.1101/2025.11.09.687449v1).
 
 The project highlights the challenges of using regression convolutional neural networks (CNNs) to predict chromatin accessibility differences between species in bulk liver ATAC-seq data.
 
 Note on Usage: Most scripts use project-specific naming conventions and data structures. While they serve as documented templates for the analysis methodology, they will require adaptation to work with external datasets.
+
+Note on Citation: In addition to the preprint above, many parts of this code use tools published by others that are mentioned in the documentation.  If you are using code that involves those tools, make sure to cite the tools in addition to the above pre-print.
 
 ## Key Features
 Quantile Normalization (quantile_normalize.py): Standardizes signal distributions across species for fixed-size peak sets.
