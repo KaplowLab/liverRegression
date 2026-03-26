@@ -42,4 +42,3 @@ for DIR in "${DIRS[@]}"; do
     echo "" # Add a newline for cleaner output
 done
 
-echo "All jobs completed! 🎉"

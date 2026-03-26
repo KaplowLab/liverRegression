@@ -2,13 +2,13 @@
 # -*- coding: utf-8 -*-
 
 """
-Quantile normalizes BED files
+Quantile normalizes input files
 
-This script takes multiple space separated BED file name paths. Assumes the files are the same length.
+This script takes multiple space separated bed or narrowPeak file name paths. Assumes the files are the same length. Change the value of i in the load_bed_file function to denote the column containing the signal value (5 for BED file; 7 for narrowPeak file).
 
-Saves quantile normalized BED files in "quantile_norm" subdirectory
+Saves quantile normalized output files in "quantile_norm" subdirectory
 
-It quantile normalizes with no ties for rank.
+Quantile normalizes with no ties for rank.
 """
 
 import numpy as np
@@ -58,7 +58,7 @@ def main(input_files, output_files, i=5):
     dfs = [load_bed_file(file, i) for file in input_files]
     
     # 2D array - each df occupies a row
-    all_values = np.vstack([df[4].values for df in dfs])
+    all_values = np.vstack([df[i-1].values for df in dfs])
     
     # Quantile normalize the ith column
     all_values_qn = quantile_normalize(all_values)
@@ -67,7 +67,7 @@ def main(input_files, output_files, i=5):
     index = 0
     for i, df in enumerate(dfs):
         size = df.shape[0]
-        df[4] = all_values_qn[i]
+        df[i-1] = all_values_qn[i]
         save_bed_file(df, output_files[i])
 
 def new_path_dir(file_paths):

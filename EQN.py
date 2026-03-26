@@ -4,6 +4,8 @@
 """
 Processes BED files using Extended Quantile Normalization (EQN) Algorithm.
 
+Assumes 'log', 'log_sorted', 'quantile_norm' directories have already been created.
+
 This script takes a BED file name and a base directory, then processes
 several versions of the file (from 'log', 'log_sorted', 'quantile_norm'
 subdirectories).
@@ -42,8 +44,7 @@ def process_data(filename, base_dir):
         return
 
     # Split data into included/exluded sets
-    # Hardcoded based on smallest sample (e.g. pig)
-    split_index = 20615
+    split_index = len(qn_included)
     excluded = log_all[split_index:].copy()
     
     # Create the included set by filtering the sorted log file
