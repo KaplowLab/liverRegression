@@ -30,6 +30,9 @@ A number of public tools were used in this work. They are linked below.
 
 [MEME-Suite](https://meme-suite.org/meme/tools)
 
+## Dependencies
+Conda environment YAML files for [HAL](https://github.com/ComparativeGenomicsToolkit/hal) and one for the [CNN Pipeline](https://github.com/pfenninglab/cnn_pipeline) are available in the `envs/` directory, though we recommend following the official repositories for the most up-to-date installation instructions.
+
 ## Data Preprocessing
 Detailed documentation on data generation can be found in the `workflows/` directory. This includes the step-by-step logic for log transformation, quantile normalization, extended quantile normalization, summit-centering, and base-pair expansion (500bp/2000bp).
 
@@ -107,9 +110,6 @@ Motif Enrichment was conducted using [MEME-ChIP](https://meme-suite.org/meme/too
 Example code is provided in `workflow/mouse_memechip.md`.
 
 The Motif Enrichment results for the project can be found [here](http://daphne.compbio.cs.cmu.edu/files/azstephe/liver_regression_resource/).
-
-## Dependencies
-Conda environment YAML files for [HAL](https://github.com/ComparativeGenomicsToolkit/hal) and one for the [CNN Pipeline](https://github.com/pfenninglab/cnn_pipeline) are available in the `envs/` directory, though we recommend following the official repositories for the most up-to-date installation instructions.
 
 ## Data Availability
 Processed datasets can be found [here](http://daphne.compbio.cs.cmu.edu/files/azstephe/liver_regression_resource/processed_data) with the following file structure. Python notebooks serve as templates and must be adapted when applied to these datasets.
