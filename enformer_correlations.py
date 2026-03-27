@@ -44,10 +44,8 @@ ENFORMER_OUTPUTS = Path("/home/azstephe/liverRegression/regression_liver/data/en
 
 results_list = []
 meta_results = []
-dir_list = ['log_test2', 'log_test1']
 
-for subdir_name in dir_list:
-# for subdir_name in os.listdir(ENFORMER_OUT):
+for subdir_name in os.listdir(ENFORMER_OUTPUTS):
     subdir_path = ENFORMER_OUTPUTS / subdir_name
     if not subdir_path.is_dir(): 
         continue
