@@ -58,6 +58,8 @@ python $PROJECT_DIR/repos/OCROrthologPrediction/src/filterPeakName.py \
 ### Peak Standardization
 Using the `atac_data_pipeline` repository, center the identified peaks on their summits and expand them to 500bp to prepare them for the regression model. 
 
+Remember to first `conda activate hal`.
+
 ```bash
 # Center and expand peaks to 500bp for model input
 python $PROJECT_DIR/repos/atac_data_pipeline/scripts/preprocessing.py expand_peaks \

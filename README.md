@@ -3,13 +3,13 @@ This repository contains the codebase and data processing pipelines used for the
 
 ### Challenges in Predicting Chromatin Accessibility Differences between Species
 
-Amy Stephen, Arian Raje, Heather H. Sestili, Morgan E. Wirthlin, Alyssa J. Lawler, Ashley R. Brown, William R. Stauffer, Andreas R. Pfenning, Irene M. Kaplow. bioRxiv 2025; doi: https://doi.org/10.1101/2025.11.09.687449
-
-https://www.biorxiv.org/content/10.1101/2025.11.09.687449v1
+Amy Stephen, Arian Raje, Heather H. Sestili, Morgan E. Wirthlin, Alyssa J. Lawler, Ashley R. Brown, William R. Stauffer, Andreas R. Pfenning, Irene M. Kaplow. bioRxiv 2025; [pre-print link](https://www.biorxiv.org/content/10.1101/2025.11.09.687449v1).
 
 The project highlights the challenges of using regression convolutional neural networks (CNNs) to predict chromatin accessibility differences between species in bulk liver ATAC-seq data.
 
 Note on Usage: Most scripts use project-specific naming conventions and data structures. While they serve as documented templates for the analysis methodology, they will require adaptation to work with external datasets.
+
+Note on Citation: In addition to the preprint above, many parts of this code use tools published by others that are mentioned in the documentation.  If you are using code that involves those tools, make sure to cite the tools in addition to the above pre-print.
 
 ## Key Features
 Quantile Normalization (quantile_normalize.py): Standardizes signal distributions across species for fixed-size peak sets.
@@ -29,6 +29,9 @@ A number of public tools were used in this work. They are linked below.
 [cnn_pipeline](https://github.com/pfenninglab/cnn_pipeline)
 
 [MEME-Suite](https://meme-suite.org/meme/tools)
+
+## Dependencies
+Conda environment YAML files for [HAL](https://github.com/ComparativeGenomicsToolkit/hal) and one for the [CNN Pipeline](https://github.com/pfenninglab/cnn_pipeline) are available in the `envs/` directory, though we recommend following the official repositories for the most up-to-date installation instructions.
 
 ## Data Preprocessing
 Detailed documentation on data generation can be found in the `workflows/` directory. This includes the step-by-step logic for log transformation, quantile normalization, extended quantile normalization, summit-centering, and base-pair expansion (500bp/2000bp).
@@ -108,11 +111,8 @@ Example code is provided in `workflow/mouse_memechip.md`.
 
 The Motif Enrichment results for the project can be found [here](http://daphne.compbio.cs.cmu.edu/files/azstephe/liver_regression_resource/).
 
-## Dependencies
-Conda environment YAML files for[HAL](https://github.com/ComparativeGenomicsToolkit/hal) and one for the [CNN Pipeline](https://github.com/pfenninglab/cnn_pipeline) are available in the `envs/` directory, though we recommend following the official repositories for the most up-to-date installation instructions.
-
 ## Data Availability
-Processed datasets can be found [here](http://daphne.compbio.cs.cmu.edu/files/azstephe/liver_regression_resource/data) with the following file structure. Python notebooks serve as templates and must be adapted when applied to these datasets.
+Processed datasets can be found [here](http://daphne.compbio.cs.cmu.edu/files/azstephe/liver_regression_resource/processed_data) with the following file structure. Python notebooks serve as templates and must be adapted when applied to these datasets.
 
 ```
 data
